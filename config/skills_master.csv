@@ -1,0 +1,92 @@
+skill_name,category,aliases
+Python,Programming Language,py|python3|python2|pythonic
+JavaScript,Programming Language,js|javascript|ecmascript|nodejs|node.js
+TypeScript,Programming Language,ts|typescript
+Java,Programming Language,java8|java11|java17|jdk
+C++,Programming Language,cpp|cplusplus|cxx
+C#,Programming Language,csharp|dotnet|.net
+Go,Programming Language,golang|go lang
+Rust,Programming Language,rustlang
+Swift,Programming Language,swiftui
+Kotlin,Programming Language,kotlinlang
+Ruby,Programming Language,ruby on rails|rails|ror
+PHP,Programming Language,php7|php8
+R,Programming Language,r language|rstudio
+Scala,Programming Language,scala lang
+SQL,Database,sql|postgresql|mysql|sqlite|mssql
+MongoDB,Database,mongodb|mongo
+PostgreSQL,Database,postgres|postgresql|pg
+MySQL,Database,mysql|mariadb
+Redis,Database,redis cache|redis
+Elasticsearch,Database,elastic|elk|elastic search
+AWS,Cloud Platform,amazon web services|amazon aws|aws cloud
+Azure,Cloud Platform,microsoft azusre|azure cloud
+GCP,Cloud Platform,google cloud|google cloud platform|gcp cloud
+Docker,DevOps,docker|dockerfile|docker compose
+Kubernetes,DevOps,k8s|kubernetes|kube
+Terraform,DevOps,terraform|iac|infrastructure as code
+Jenkins,DevOps,jenkins ci|jenkins pipeline
+GitLab CI,DevOps,gitlab|gitlab ci/cd
+GitHub Actions,DevOps,github actions|gh actions
+React,Frontend Framework,reactjs|react.js|react native
+Vue.js,Frontend Framework,vue|vuejs|vue.js
+Angular,Frontend Framework,angularjs|angular.js|angular 2+
+Next.js,Frontend Framework,nextjs|next.js
+Svelte,Frontend Framework,sveltejs|svelte
+Django,Backend Framework,django|django rest|django framework
+Flask,Backend Framework,flask|flask api
+FastAPI,Backend Framework,fastapi|fast api
+Spring Boot,Backend Framework,spring|spring framework|springboot
+Express.js,Backend Framework,express|expressjs|express.js
+Node.js,Backend Framework,node|nodejs|node.js
+GraphQL,API,graphql|graph ql|apollo graphql
+REST API,API,rest|restful|rest api
+gRPC,API,grpc|rpc
+Microservices,Architecture,microservices|micro service|service-oriented
+Machine Learning,AI/ML,ml|machine learning|deep learning
+Deep Learning,AI/ML,deep learning|neural networks|cnn|rnn
+TensorFlow,AI/ML,tensorflow|tf|tensor flow
+PyTorch,AI/ML,pytorch|pytorch|torch
+Scikit-learn,AI/ML,sklearn|scikit|scikit learn
+Pandas,Data Science,pandas|pd
+NumPy,Data Science,numpy|np
+Jupyter,Data Science,jupyter notebook|jupyterlab|ipython
+Tableau,Data Visualization,tableau|tableau desktop
+Power BI,Data Visualization,powerbi|power bi|microsoft power bi
+D3.js,Data Visualization,d3|d3js|d3.js
+Plotly,Data Visualization,plotly|plotly.js
+Git,Version Control,git|github|gitlab|bitbucket
+Linux,Operating System,linux|ubuntu|debian|centos
+Bash,Scripting,bash|shell|shell scripting
+CI/CD,DevOps,ci/cd|continuous integration|continuous deployment
+Agile,Methodology,agile|scrum|kanban|sprint
+TDD,Methodology,test driven development|tdd|unit testing
+Jest,Testing,jest|jestjs
+PyTest,Testing,pytest|pytest framework
+Selenium,Testing,selenium|selenium webdriver
+Cypress,Testing,cypress|cypress.io
+Kafka,Message Queue,kafka|apache kafka
+RabbitMQ,Message Queue,rabbitmq|rabbit mq
+Apache Spark,Big Data,spark|apache spark|pyspark
+Hadoop,Big Data,hadoop|apache hadoop|hdfs
+Snowflake,Data Warehouse,snowflake|snowflake db
+Databricks,Data Platform,databricks|databricks platform
+Airflow,Data Engineering,airflow|apache airflow|airflow dags
+dbt,Data Engineering,dbt|data build tool
+Figma,Design,figma|figma design
+Adobe XD,Design,adobe xd|xd
+Webpack,Build Tool,webpack|webpack bundler
+Vite,Build Tool,vite|vitejs
+Nginx,Web Server,nginx|nginx server
+Apache,Web Server,apache|apache http server
+TypeScript,Type System,ts|typescript|tsx
+HTML,Web Technology,html5|html|hypertext markup language
+CSS,Web Technology,css3|css|sass|scss|less
+SASS,Web Technology,sass|scss|syntactically awesome stylesheets
+Tailwind CSS,Web Technology,tailwind|tailwindcss|tailwind css
+Bootstrap,Web Technology,bootstrap|bootstrap css
+WebSocket,Web Technology,websocket|ws|socket.io
+OAuth,Authentication,oauth|oauth2|openid connect
+JWT,Authentication,jwt|json web token
+OAuth2,Authentication,oauth2|oauth 2.0
+

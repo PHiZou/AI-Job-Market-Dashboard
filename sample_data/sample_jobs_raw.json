@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "job_id": "sample_001",
+      "job_title": "Senior Software Engineer",
+      "employer_name": "Tech Corp",
+      "job_description": "We are looking for a Senior Software Engineer with experience in Python, JavaScript, and AWS. Must have 5+ years of experience with React and Node.js.",
+      "job_city": "San Francisco",
+      "job_state": "CA",
+      "job_country": "US",
+      "job_min_salary": 120000,
+      "job_max_salary": 180000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-15T10:00:00Z"
+    },
+    {
+      "job_id": "sample_002",
+      "job_title": "Data Scientist",
+      "employer_name": "Data Analytics Inc",
+      "job_description": "Seeking a Data Scientist proficient in Python, Machine Learning, TensorFlow, and SQL. Experience with pandas and scikit-learn required.",
+      "job_city": "New York",
+      "job_state": "NY",
+      "job_country": "US",
+      "job_min_salary": 130000,
+      "job_max_salary": 170000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-16T11:00:00Z"
+    },
+    {
+      "job_id": "sample_003",
+      "job_title": "DevOps Engineer",
+      "employer_name": "Cloud Solutions",
+      "job_description": "DevOps Engineer needed with Docker, Kubernetes, AWS, and Terraform experience. CI/CD pipeline management required.",
+      "job_city": "Seattle",
+      "job_state": "WA",
+      "job_country": "US",
+      "job_min_salary": 110000,
+      "job_max_salary": 160000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-17T09:00:00Z"
+    },
+    {
+      "job_id": "sample_004",
+      "job_title": "Frontend Developer",
+      "employer_name": "Web Design Co",
+      "job_description": "Frontend Developer position requiring React, TypeScript, HTML, CSS, and JavaScript skills. Experience with Next.js preferred.",
+      "job_city": "Austin",
+      "job_state": "TX",
+      "job_country": "US",
+      "job_min_salary": 90000,
+      "job_max_salary": 140000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-18T14:00:00Z"
+    },
+    {
+      "job_id": "sample_005",
+      "job_title": "Backend Engineer",
+      "employer_name": "API Services",
+      "job_description": "Backend Engineer role with Python, Django, PostgreSQL, and REST API experience. Microservices architecture knowledge preferred.",
+      "job_city": "Boston",
+      "job_state": "MA",
+      "job_country": "US",
+      "job_min_salary": 115000,
+      "job_max_salary": 165000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-19T10:30:00Z"
+    },
+    {
+      "job_id": "sample_006",
+      "job_title": "ML Engineer",
+      "employer_name": "AI Innovations",
+      "job_description": "Machine Learning Engineer position. Required: Python, PyTorch, TensorFlow, Deep Learning, and NLP experience.",
+      "job_city": "San Francisco",
+      "job_state": "CA",
+      "job_country": "US",
+      "job_min_salary": 140000,
+      "job_max_salary": 200000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-20T08:00:00Z"
+    },
+    {
+      "job_id": "sample_007",
+      "job_title": "Full Stack Developer",
+      "employer_name": "StartupXYZ",
+      "job_description": "Full Stack Developer needed. Skills: JavaScript, Node.js, React, MongoDB, Express.js, and Git.",
+      "job_city": "Denver",
+      "job_state": "CO",
+      "job_country": "US",
+      "job_min_salary": 95000,
+      "job_max_salary": 135000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-21T12:00:00Z"
+    },
+    {
+      "job_id": "sample_008",
+      "job_title": "Cloud Architect",
+      "employer_name": "Enterprise Cloud",
+      "job_description": "Cloud Architect role requiring AWS, Azure, GCP, Kubernetes, and Terraform expertise. Architecture design experience needed.",
+      "job_city": "Chicago",
+      "job_state": "IL",
+      "job_country": "US",
+      "job_min_salary": 150000,
+      "job_max_salary": 220000,
+      "job_salary_currency": "USD",
+      "job_posted_at_datetime_utc": "2024-01-22T15:00:00Z"
+    }
+  ]
+}
+

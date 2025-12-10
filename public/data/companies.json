@@ -1,0 +1,418 @@
+[
+  {
+    "company_name": "Capital One",
+    "job_count": 10,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "McLean, Virginia, US",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Walmart",
+    "job_count": 9,
+    "avg_salary_min": 110666.66666666667,
+    "avg_salary_max": 221333.33333333334,
+    "primary_location": "Waldorf, Maryland, US",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "Leidos",
+    "job_count": 5,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Chantilly, Virginia, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Peraton",
+    "job_count": 3,
+    "avg_salary_min": 138333.33333333334,
+    "avg_salary_max": 221333.33333333334,
+    "primary_location": "Herndon, Virginia, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Microsoft",
+    "job_count": 2,
+    "avg_salary_min": 110500.0,
+    "avg_salary_max": 236500.0,
+    "primary_location": "Reston, Virginia, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Jobs via Dice",
+    "job_count": 2,
+    "avg_salary_min": 85150.0,
+    "avg_salary_max": 153925.0,
+    "primary_location": "Annapolis, Maryland, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Booz Allen Hamilton",
+    "job_count": 2,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Fort Belvoir, Virginia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Oracle",
+    "job_count": 2,
+    "avg_salary_min": 79800.0,
+    "avg_salary_max": 178000.0,
+    "primary_location": "Reston, Virginia, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Freddie Mac",
+    "job_count": 2,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "McLean, Virginia, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "2-CM Technologies,",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Jessup, Maryland, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Prime Video & Amazon MGM Studios",
+    "job_count": 1,
+    "avg_salary_min": 129000.0,
+    "avg_salary_max": 224000.0,
+    "primary_location": "Arlington, Virginia, US",
+    "primary_category": "Full Stack Development"
+  },
+  {
+    "company_name": "Motion Recruitment",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Arlington, Virginia, US",
+    "primary_category": "Product Management"
+  },
+  {
+    "company_name": "Navstar",
+    "job_count": 1,
+    "avg_salary_min": 200000.0,
+    "avg_salary_max": 280000.0,
+    "primary_location": "Columbia, Maryland, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Nerd Up Staffing",
+    "job_count": 1,
+    "avg_salary_min": 75000.0,
+    "avg_salary_max": 85000.0,
+    "primary_location": "McLean, Virginia, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Northrop Grumman",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Annapolis Junction, Maryland, US",
+    "primary_category": "DevOps & Infrastructure"
+  },
+  {
+    "company_name": "RealmOne",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Baltimore, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Rackner",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Falls Church, Virginia, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "McKinsey & Company",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Red Cedar Consultancy",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "McLean, Virginia, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Serco North America",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Alexandria, Virginia, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Skyward",
+    "job_count": 1,
+    "avg_salary_min": 125000.0,
+    "avg_salary_max": 150000.0,
+    "primary_location": "Rockville, Maryland, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Spire",
+    "job_count": 1,
+    "avg_salary_min": 130000.0,
+    "avg_salary_max": 171000.0,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "Security & Compliance"
+  },
+  {
+    "company_name": "TMC TECHNOLOGIES",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "King George, Virginia, US",
+    "primary_category": "Cloud & Architecture"
+  },
+  {
+    "company_name": "The MITRE Corporation",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "McLean, Virginia, US",
+    "primary_category": "DevOps & Infrastructure"
+  },
+  {
+    "company_name": "US General Services Administration",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Verite Group,",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Dulles, Virginia, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Year Up United",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Middletown, Delaware, US",
+    "primary_category": "Security & Compliance"
+  },
+  {
+    "company_name": "Medifast,",
+    "job_count": 1,
+    "avg_salary_min": 100232.0,
+    "avg_salary_max": 135608.0,
+    "primary_location": "Baltimore, Maryland, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Leonardo DRS",
+    "job_count": 1,
+    "avg_salary_min": 130801.0,
+    "avg_salary_max": 203068.0,
+    "primary_location": "Germantown, Maryland, US",
+    "primary_category": "DevOps & Infrastructure"
+  },
+  {
+    "company_name": "Lockheed Martin",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Manassas, Virginia, US",
+    "primary_category": "DevOps & Infrastructure"
+  },
+  {
+    "company_name": "CPower",
+    "job_count": 1,
+    "avg_salary_min": 18.0,
+    "avg_salary_max": 22.0,
+    "primary_location": "Baltimore, Maryland, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Accenture Federal Services",
+    "job_count": 1,
+    "avg_salary_min": 84700.0,
+    "avg_salary_max": 149000.0,
+    "primary_location": "Annapolis, Maryland, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Ad Hoc",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Advanced Technology and Research Corporation",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Bethesda, Maryland, US",
+    "primary_category": "Product Management"
+  },
+  {
+    "company_name": "AvalonBay Communities",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Arlington, Virginia, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "BAE Systems",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "DevOps & Infrastructure"
+  },
+  {
+    "company_name": "Belay Technologies",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Laurel, Maryland, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Black Eagle Defense",
+    "job_count": 1,
+    "avg_salary_min": 119000.0,
+    "avg_salary_max": 176000.0,
+    "primary_location": "Fort Meade, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Boeing",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Annapolis Junction, Maryland, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "CACI International",
+    "job_count": 1,
+    "avg_salary_min": 86600.0,
+    "avg_salary_max": 182000.0,
+    "primary_location": "Fort Meade, Maryland, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Cesna Group",
+    "job_count": 1,
+    "avg_salary_min": 50000.0,
+    "avg_salary_max": 100000.0,
+    "primary_location": "Vienna, Virginia, US",
+    "primary_category": "Cloud & Architecture"
+  },
+  {
+    "company_name": "Leonardo DRS,",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Frederick, Maryland, US",
+    "primary_category": "DevOps & Infrastructure"
+  },
+  {
+    "company_name": "Cymertek Corporation",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Tysons, Virginia, US",
+    "primary_category": "Full Stack Development"
+  },
+  {
+    "company_name": "Fei.com,",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Columbia, Maryland, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Ford Motor Company",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Rising Sun, Maryland, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "GEICO",
+    "job_count": 1,
+    "avg_salary_min": 100000.0,
+    "avg_salary_max": 215000.0,
+    "primary_location": "Unknown",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "GSA",
+    "job_count": 1,
+    "avg_salary_min": 146481.0,
+    "avg_salary_max": 195200.0,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Guidehouse",
+    "job_count": 1,
+    "avg_salary_min": 115000.0,
+    "avg_salary_max": 173000.0,
+    "primary_location": "Fort Meade, Maryland, US",
+    "primary_category": "Full Stack Development"
+  },
+  {
+    "company_name": "KnowHireMatch",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Maryland, US",
+    "primary_category": "Security & Compliance"
+  },
+  {
+    "company_name": "Knowhirematch",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "Security & Compliance"
+  },
+  {
+    "company_name": "AT&T",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Oakton, Virginia, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Zak Systems",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Herndon, Virginia, US",
+    "primary_category": "QA & Testing"
+  }
+]

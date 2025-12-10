@@ -1,0 +1,212 @@
+[
+  {
+    "date": "2025-12-09",
+    "category": "Machine Learning & AI",
+    "forecast": 1.2941578566894087,
+    "forecast_lower": 0.8903565339733813,
+    "forecast_upper": 1.6670479917894916
+  },
+  {
+    "date": "2025-12-10",
+    "category": "Machine Learning & AI",
+    "forecast": 1.2353208462789043,
+    "forecast_lower": 0.8493560576317596,
+    "forecast_upper": 1.5932882539843867
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Machine Learning & AI",
+    "forecast": 4.117645569932427,
+    "forecast_lower": 3.7222164524518493,
+    "forecast_upper": 4.479034409309859
+  },
+  {
+    "date": "2025-12-12",
+    "category": "Machine Learning & AI",
+    "forecast": 2.117643011313594,
+    "forecast_lower": 1.7321237856078662,
+    "forecast_upper": 2.5110483113671385
+  },
+  {
+    "date": "2025-12-13",
+    "category": "Machine Learning & AI",
+    "forecast": 1.1176406435643014,
+    "forecast_lower": 0.7354491190401647,
+    "forecast_upper": 1.4810717920267278
+  },
+  {
+    "date": "2025-12-14",
+    "category": "Machine Learning & AI",
+    "forecast": 1.1176384005123392,
+    "forecast_lower": 0.7112223917689516,
+    "forecast_upper": 1.4978835559508943
+  },
+  {
+    "date": "2025-12-15",
+    "category": "Machine Learning & AI",
+    "forecast": 1.7353220071532165,
+    "forecast_lower": 1.3542541487345858,
+    "forecast_upper": 2.1085155796881736
+  },
+  {
+    "date": "2025-12-16",
+    "category": "Machine Learning & AI",
+    "forecast": 1.411828162608516,
+    "forecast_lower": 1.0223737324809985,
+    "forecast_upper": 1.797869738972058
+  },
+  {
+    "date": "2025-12-17",
+    "category": "Machine Learning & AI",
+    "forecast": 1.3529911522005063,
+    "forecast_lower": 0.9736455401381084,
+    "forecast_upper": 1.7639453393416098
+  },
+  {
+    "date": "2025-12-18",
+    "category": "Machine Learning & AI",
+    "forecast": 4.235315875851732,
+    "forecast_lower": 3.8715348518590735,
+    "forecast_upper": 4.601446619477308
+  },
+  {
+    "date": "2025-12-19",
+    "category": "Machine Learning & AI",
+    "forecast": 2.235313317231083,
+    "forecast_lower": 1.8482581998509626,
+    "forecast_upper": 2.5980633030536793
+  },
+  {
+    "date": "2025-12-20",
+    "category": "Machine Learning & AI",
+    "forecast": 1.235310949484908,
+    "forecast_lower": 0.8579203084561293,
+    "forecast_upper": 1.6009905905125819
+  },
+  {
+    "date": "2025-12-21",
+    "category": "Machine Learning & AI",
+    "forecast": 1.2353087064279464,
+    "forecast_lower": 0.8589818757861066,
+    "forecast_upper": 1.617704449181615
+  },
+  {
+    "date": "2025-12-22",
+    "category": "Machine Learning & AI",
+    "forecast": 1.852992313074784,
+    "forecast_lower": 1.4759430739453367,
+    "forecast_upper": 2.218148602383342
+  },
+  {
+    "date": "2025-12-23",
+    "category": "Machine Learning & AI",
+    "forecast": 1.529498468524351,
+    "forecast_lower": 1.1650126194128962,
+    "forecast_upper": 1.9083493464768793
+  },
+  {
+    "date": "2025-12-24",
+    "category": "Machine Learning & AI",
+    "forecast": 1.4706614581184139,
+    "forecast_lower": 1.093272479522288,
+    "forecast_upper": 1.847296834793844
+  },
+  {
+    "date": "2025-12-25",
+    "category": "Machine Learning & AI",
+    "forecast": 4.352986181771038,
+    "forecast_lower": 3.924505328397586,
+    "forecast_upper": 4.737643819139662
+  },
+  {
+    "date": "2025-12-26",
+    "category": "Machine Learning & AI",
+    "forecast": 2.3529836231576056,
+    "forecast_lower": 1.9786781400300604,
+    "forecast_upper": 2.7015544059052172
+  },
+  {
+    "date": "2025-12-27",
+    "category": "Machine Learning & AI",
+    "forecast": 1.3529812554023126,
+    "forecast_lower": 0.9810440690745954,
+    "forecast_upper": 1.7097284901179397
+  },
+  {
+    "date": "2025-12-28",
+    "category": "Machine Learning & AI",
+    "forecast": 1.3529790123444663,
+    "forecast_lower": 0.9851429834636153,
+    "forecast_upper": 1.7134039661279652
+  },
+  {
+    "date": "2025-12-29",
+    "category": "Machine Learning & AI",
+    "forecast": 1.9706626189923016,
+    "forecast_lower": 1.6070694767082085,
+    "forecast_upper": 2.3620196022549123
+  },
+  {
+    "date": "2025-12-30",
+    "category": "Machine Learning & AI",
+    "forecast": 1.6471687744434582,
+    "forecast_lower": 1.2987809146078353,
+    "forecast_upper": 2.049830459474286
+  },
+  {
+    "date": "2025-12-31",
+    "category": "Machine Learning & AI",
+    "forecast": 1.5883317640400159,
+    "forecast_lower": 1.194972657208005,
+    "forecast_upper": 1.951470676775426
+  },
+  {
+    "date": "2026-01-01",
+    "category": "Machine Learning & AI",
+    "forecast": 4.470656487687255,
+    "forecast_lower": 4.0932137706092115,
+    "forecast_upper": 4.8301183959260126
+  },
+  {
+    "date": "2026-01-02",
+    "category": "Machine Learning & AI",
+    "forecast": 2.4706539290750946,
+    "forecast_lower": 2.0938524949786292,
+    "forecast_upper": 2.838832712794793
+  },
+  {
+    "date": "2026-01-03",
+    "category": "Machine Learning & AI",
+    "forecast": 1.4706515613229194,
+    "forecast_lower": 1.0961649117630217,
+    "forecast_upper": 1.863101407003147
+  },
+  {
+    "date": "2026-01-04",
+    "category": "Machine Learning & AI",
+    "forecast": 1.4706493182690354,
+    "forecast_lower": 1.0849515949543609,
+    "forecast_upper": 1.8526808472880874
+  },
+  {
+    "date": "2026-01-05",
+    "category": "Machine Learning & AI",
+    "forecast": 2.0883329249033307,
+    "forecast_lower": 1.709426369848007,
+    "forecast_upper": 2.447502100586247
+  },
+  {
+    "date": "2026-01-06",
+    "category": "Machine Learning & AI",
+    "forecast": 1.7648390803646006,
+    "forecast_lower": 1.3920955368915386,
+    "forecast_upper": 2.1107944883788052
+  },
+  {
+    "date": "2026-01-07",
+    "category": "Machine Learning & AI",
+    "forecast": 1.7060020699597709,
+    "forecast_lower": 1.310956517168789,
+    "forecast_upper": 2.0977902205910497
+  }
+]

@@ -1,0 +1,226 @@
+---
+// About page for the AI Job Market Intelligence Dashboard
+---
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About the AI-Driven Job Market Intelligence Dashboard - Architecture, tech stack, and design decisions">
+    <title>About - AI Job Market Intelligence Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+</head>
+<body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <header class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 transition-colors">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">
+                        About the Dashboard
+                    </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-300">
+                        Architecture, technology stack, and design decisions
+                    </p>
+                </div>
+                <a
+                    href="/projects/job-market-dashboard"
+                    class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                >
+                    ← Back to Dashboard
+                </a>
+            </div>
+        </header>
+
+        <!-- Overview Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 transition-colors">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Overview</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                The AI-Driven Job Market Intelligence Dashboard is a production-grade analytics platform that ingests, processes, and visualizes job market data for the Northern Virginia (NOVA) and Washington D.C. metropolitan area. The system provides real-time insights into hiring trends, skill demand, and market forecasts through automated ETL pipelines, NLP processing, and interactive visualizations.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                This project demonstrates expertise in full-stack data engineering, machine learning, and modern web development, combining Python-based data processing with a React-powered frontend built on Astro.
+            </p>
+        </section>
+
+        <!-- Architecture Diagram -->
+        <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 transition-colors">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">System Architecture</h2>
+            <div class="bg-gray-50 dark:bg-gray-900 rounded-lg p-6 overflow-x-auto">
+                <pre class="text-sm"><code class="language-mermaid">
+graph TB
+    A[GitHub Actions<br/>Daily Cron] -->|Trigger| B[ETL Pipeline]
+    B --> C[Fetch Jobs<br/>JSearch API]
+    C --> D[Clean & Normalize]
+    D --> E[NLP Processing]
+    E --> F[Skill Extraction]
+    E --> G[Embeddings & Clustering]
+    F --> H[Aggregate Counts]
+    G --> H
+    H --> I[Forecast Models<br/>Prophet]
+    H --> J[Generate Alerts]
+    I --> K[Export JSON]
+    J --> K
+    K --> L[Public Data<br/>JSON Files]
+    L --> M[Astro Frontend]
+    M --> N[React Components]
+    N --> O[Plotly Charts]
+    N --> P[Interactive Dashboard]
+    
+    style A fill:#3b82f6
+    style B fill:#8b5cf6
+    style E fill:#ec4899
+    style I fill:#10b981
+    style M fill:#f59e0b
+                </code></pre>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 transition-colors">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Technology Stack</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Backend / ETL</h3>
+                    <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                        <li><strong>Python 3.11+</strong> - Core language</li>
+                        <li><strong>Pandas</strong> - Data manipulation</li>
+                        <li><strong>PyArrow</strong> - Parquet file handling</li>
+                        <li><strong>Sentence Transformers</strong> - NLP embeddings</li>
+                        <li><strong>scikit-learn</strong> - Clustering (K-means)</li>
+                        <li><strong>Prophet</strong> - Time-series forecasting</li>
+                        <li><strong>OpenAI API</strong> - Optional LLM skill extraction</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Frontend</h3>
+                    <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                        <li><strong>Astro</strong> - Static site framework</li>
+                        <li><strong>React 18</strong> - UI components</li>
+                        <li><strong>TypeScript</strong> - Type safety</li>
+                        <li><strong>Tailwind CSS</strong> - Styling</li>
+                        <li><strong>Plotly.js</strong> - Interactive charts</li>
+                        <li><strong>D3.js</strong> - Data visualization utilities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 transition-colors">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Key Features</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-indigo-50 dark:bg-indigo-900/20 rounded-lg p-4">
+                    <h4 class="font-semibold text-indigo-900 dark:text-indigo-200 mb-2">Automated ETL Pipeline</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Daily GitHub Actions workflow fetches, cleans, and processes job postings automatically.
+                    </p>
+                </div>
+                <div class="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4">
+                    <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-2">NLP Skill Extraction</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Multi-method skill extraction using regex, keyword matching, and optional LLM processing.
+                    </p>
+                </div>
+                <div class="bg-pink-50 dark:bg-pink-900/20 rounded-lg p-4">
+                    <h4 class="font-semibold text-pink-900 dark:text-pink-200 mb-2">Job Category Clustering</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Unsupervised clustering using sentence embeddings and K-means to categorize jobs.
+                    </p>
+                </div>
+                <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
+                    <h4 class="font-semibold text-green-900 dark:text-green-200 mb-2">Time-Series Forecasting</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Prophet models generate 30-day hiring volume forecasts with confidence intervals.
+                    </p>
+                </div>
+                <div class="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4">
+                    <h4 class="font-semibold text-yellow-900 dark:text-yellow-200 mb-2">Anomaly Detection</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Automated alerts for spikes, drops, and emerging skill trends using statistical methods.
+                    </p>
+                </div>
+                <div class="bg-cyan-50 dark:bg-cyan-900/20 rounded-lg p-4">
+                    <h4 class="font-semibold text-cyan-900 dark:text-cyan-200 mb-2">Interactive Dashboard</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Real-time visualizations with dark mode, responsive design, and professional styling.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Decisions -->
+        <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 transition-colors">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Design Decisions</h2>
+            <div class="space-y-4 text-gray-700 dark:text-gray-300">
+                <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Parquet for Intermediate Storage</h4>
+                    <p class="text-sm">
+                        Parquet files provide efficient columnar storage for large datasets, enabling fast aggregation queries and reducing storage costs compared to JSON.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">JSON for Frontend Consumption</h4>
+                    <p class="text-sm">
+                        Curated JSON files are optimized for client-side consumption, reducing payload size and enabling fast dashboard loading without backend API calls.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Astro + React Hybrid</h4>
+                    <p class="text-sm">
+                        Astro provides excellent static site generation and performance, while React components handle interactive visualizations. The `client:only` directive ensures charts only load in the browser.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">GitHub Actions for Automation</h4>
+                    <p class="text-sm">
+                        Daily ETL runs via GitHub Actions eliminate the need for separate infrastructure, automatically committing updated data back to the repository for seamless deployment.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Flow -->
+        <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 transition-colors">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Data Flow</h2>
+            <ol class="list-decimal list-inside space-y-3 text-gray-700 dark:text-gray-300">
+                <li><strong>Data Ingestion:</strong> JSearch API (via RapidAPI) fetches job postings daily</li>
+                <li><strong>Cleaning:</strong> Normalize titles, companies, salaries, and locations; remove duplicates</li>
+                <li><strong>NLP Processing:</strong> Extract skills, generate embeddings, cluster into categories</li>
+                <li><strong>Aggregation:</strong> Compute time-series features, rolling averages, skill frequencies</li>
+                <li><strong>Forecasting:</strong> Prophet models generate 30-day forecasts per category</li>
+                <li><strong>Alerting:</strong> Detect anomalies using statistical methods (z-scores, percentiles)</li>
+                <li><strong>Export:</strong> Convert curated Parquet files to optimized JSON for frontend</li>
+                <li><strong>Visualization:</strong> React components render interactive charts and insights</li>
+            </ol>
+        </section>
+
+        <!-- Future Enhancements -->
+        <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 transition-colors">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Future Enhancements</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                <li>Migrate to AWS S3 + Athena for scalable data storage and querying</li>
+                <li>Add Lambda functions for on-demand ETL processing</li>
+                <li>Implement real-time data streaming with Apache Kafka</li>
+                <li>Add user authentication and personalized dashboards</li>
+                <li>Expand to additional job markets beyond NOVA/DC</li>
+                <li>Integrate salary prediction models</li>
+                <li>Add company comparison and benchmarking features</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Initialize dark mode
+        (function() {
+            const isDark = localStorage.getItem('darkMode') === 'true' || 
+                          (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            document.documentElement.classList.toggle('dark', isDark);
+        })();
+    </script>
+</body>
+</html>
+

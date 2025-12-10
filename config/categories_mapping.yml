@@ -1,0 +1,20 @@
+# Category mapping for job clusters
+# Maps cluster IDs to human-readable category names
+# Update this file after running clustering to assign meaningful names
+
+cluster_0: "Software Engineering"
+cluster_1: "Data Science & Analytics"
+cluster_2: "DevOps & Infrastructure"
+cluster_3: "Frontend Development"
+cluster_4: "Backend Development"
+cluster_5: "Machine Learning & AI"
+cluster_6: "Mobile Development"
+cluster_7: "Cloud & Architecture"
+cluster_8: "Security & Compliance"
+cluster_9: "Product Management"
+cluster_10: "QA & Testing"
+cluster_11: "Full Stack Development"
+
+# Note: If you have more or fewer clusters, adjust the mapping accordingly
+# The actual cluster IDs will be determined by the K-means algorithm
+
