@@ -1,1 +1,422 @@
-[]
+[
+  {
+    "date": "2025-12-09",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.2248712768735381,
+    "forecast_lower": 0.5312104994712745,
+    "forecast_upper": 1.9415710476460641
+  },
+  {
+    "date": "2025-12-10",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.6747879691032046,
+    "forecast_lower": 0.9376710790155333,
+    "forecast_upper": 2.403736087711349
+  },
+  {
+    "date": "2025-12-11",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.4498231435222846,
+    "forecast_lower": 1.6800158466840602,
+    "forecast_upper": 3.1567163206936657
+  },
+  {
+    "date": "2025-12-12",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.9498449300008722,
+    "forecast_lower": 1.2212182852746836,
+    "forecast_upper": 2.676139948165893
+  },
+  {
+    "date": "2025-12-13",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.2248690437218874,
+    "forecast_lower": 0.45595847916771687,
+    "forecast_upper": 1.9717982888216918
+  },
+  {
+    "date": "2025-12-14",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.8248079589246402,
+    "forecast_lower": 1.0924592642716988,
+    "forecast_upper": 2.532414444614014
+  },
+  {
+    "date": "2025-12-15",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.5998510516462772,
+    "forecast_lower": 0.8286496655968604,
+    "forecast_upper": 2.368832595998475
+  },
+  {
+    "date": "2025-12-16",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.4498259910926459,
+    "forecast_lower": 0.7094016957023871,
+    "forecast_upper": 2.1932455593931417
+  },
+  {
+    "date": "2025-12-17",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.8997426833225566,
+    "forecast_lower": 1.1680268580002917,
+    "forecast_upper": 2.653834587854156
+  },
+  {
+    "date": "2025-12-18",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.6747778577413897,
+    "forecast_lower": 1.9197076277897893,
+    "forecast_upper": 3.410834852195437
+  },
+  {
+    "date": "2025-12-19",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.1747996442196214,
+    "forecast_lower": 1.4238657115676594,
+    "forecast_upper": 2.9017012965378286
+  },
+  {
+    "date": "2025-12-20",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.4498237579415654,
+    "forecast_lower": 0.6973946413190468,
+    "forecast_upper": 2.173929376004064
+  },
+  {
+    "date": "2025-12-21",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.049762673142572,
+    "forecast_lower": 1.313907880654756,
+    "forecast_upper": 2.724370907939588
+  },
+  {
+    "date": "2025-12-22",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.824805765865053,
+    "forecast_lower": 1.0917912243392902,
+    "forecast_upper": 2.5577779936036036
+  },
+  {
+    "date": "2025-12-23",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.6747807053123278,
+    "forecast_lower": 0.9809793791899661,
+    "forecast_upper": 2.36301588351832
+  },
+  {
+    "date": "2025-12-24",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.124697397543567,
+    "forecast_lower": 1.4059414604821572,
+    "forecast_upper": 2.881418954432637
+  },
+  {
+    "date": "2025-12-25",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.899732571960496,
+    "forecast_lower": 2.203468823894995,
+    "forecast_upper": 3.609631627067955
+  },
+  {
+    "date": "2025-12-26",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.3997543584422423,
+    "forecast_lower": 1.6529392606540907,
+    "forecast_upper": 3.181246887494805
+  },
+  {
+    "date": "2025-12-27",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.6747784721606702,
+    "forecast_lower": 0.94637879996617,
+    "forecast_upper": 2.4478291514905672
+  },
+  {
+    "date": "2025-12-28",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.274717387361984,
+    "forecast_lower": 1.5496275283907712,
+    "forecast_upper": 3.0045257010518314
+  },
+  {
+    "date": "2025-12-29",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.0497604800840348,
+    "forecast_lower": 1.3982252485121491,
+    "forecast_upper": 2.794352607270134
+  },
+  {
+    "date": "2025-12-30",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.8997354195314347,
+    "forecast_lower": 1.2476947531462563,
+    "forecast_upper": 2.6589485296139133
+  },
+  {
+    "date": "2025-12-31",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.3496521117629183,
+    "forecast_lower": 1.5844724075268886,
+    "forecast_upper": 3.0287100475545685
+  },
+  {
+    "date": "2026-01-01",
+    "category": "DevOps & Infrastructure",
+    "forecast": 3.1246872861793187,
+    "forecast_lower": 2.3990195312575144,
+    "forecast_upper": 3.8195614283187975
+  },
+  {
+    "date": "2026-01-02",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.624709072660992,
+    "forecast_lower": 1.8877010189375936,
+    "forecast_upper": 3.3740218412314658
+  },
+  {
+    "date": "2026-01-03",
+    "category": "DevOps & Infrastructure",
+    "forecast": 1.899733186380348,
+    "forecast_lower": 1.2083084175077143,
+    "forecast_upper": 2.608248956051482
+  },
+  {
+    "date": "2026-01-04",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.4996721015818038,
+    "forecast_lower": 1.765592170950261,
+    "forecast_upper": 3.223424040694205
+  },
+  {
+    "date": "2026-01-05",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.274715194305239,
+    "forecast_lower": 1.5192024393148587,
+    "forecast_upper": 3.0125366426096347
+  },
+  {
+    "date": "2026-01-06",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.1246901337506823,
+    "forecast_lower": 1.3933912457227975,
+    "forecast_upper": 2.8528267318554246
+  },
+  {
+    "date": "2026-01-07",
+    "category": "DevOps & Infrastructure",
+    "forecast": 2.5746068259830994,
+    "forecast_lower": 1.849796003648169,
+    "forecast_upper": 3.2865737207273074
+  },
+  {
+    "date": "2025-12-08",
+    "category": "Security & Compliance",
+    "forecast": 1.4324461181363128,
+    "forecast_lower": 0.06463324637101747,
+    "forecast_upper": 2.7909867983800334
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Security & Compliance",
+    "forecast": 2.7914904910047724,
+    "forecast_lower": 1.350869509641212,
+    "forecast_upper": 4.168683358150455
+  },
+  {
+    "date": "2025-12-10",
+    "category": "Security & Compliance",
+    "forecast": 1.431633231149154,
+    "forecast_lower": 0.09649237838812934,
+    "forecast_upper": 2.853930091419045
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Security & Compliance",
+    "forecast": 1.8615591147719266,
+    "forecast_lower": 0.4671294090578267,
+    "forecast_upper": 3.281642947194803
+  },
+  {
+    "date": "2025-12-12",
+    "category": "Security & Compliance",
+    "forecast": 1.287475805979396,
+    "forecast_lower": 0.0,
+    "forecast_upper": 2.6625039348654487
+  },
+  {
+    "date": "2025-12-13",
+    "category": "Security & Compliance",
+    "forecast": 0.0,
+    "forecast_lower": 0.0,
+    "forecast_upper": 1.0293205930027258
+  },
+  {
+    "date": "2025-12-14",
+    "category": "Security & Compliance",
+    "forecast": 3.148420748394259,
+    "forecast_lower": 1.8604877508722881,
+    "forecast_upper": 4.51510811252249
+  },
+  {
+    "date": "2025-12-15",
+    "category": "Security & Compliance",
+    "forecast": 1.5769122329575493,
+    "forecast_lower": 0.17128250880916898,
+    "forecast_upper": 2.8826319979278674
+  },
+  {
+    "date": "2025-12-16",
+    "category": "Security & Compliance",
+    "forecast": 2.935956605826187,
+    "forecast_lower": 1.6125865045432857,
+    "forecast_upper": 4.248821718325965
+  },
+  {
+    "date": "2025-12-17",
+    "category": "Security & Compliance",
+    "forecast": 1.5760993459665709,
+    "forecast_lower": 0.19048839179992794,
+    "forecast_upper": 2.8990897784863976
+  },
+  {
+    "date": "2025-12-18",
+    "category": "Security & Compliance",
+    "forecast": 2.0060252295925642,
+    "forecast_lower": 0.7792791277187768,
+    "forecast_upper": 3.397800893013924
+  },
+  {
+    "date": "2025-12-19",
+    "category": "Security & Compliance",
+    "forecast": 1.4319419208032658,
+    "forecast_lower": 0.10264617409286529,
+    "forecast_upper": 2.8514741534188106
+  },
+  {
+    "date": "2025-12-20",
+    "category": "Security & Compliance",
+    "forecast": 0.0,
+    "forecast_lower": 0.0,
+    "forecast_upper": 1.0833119801764066
+  },
+  {
+    "date": "2025-12-21",
+    "category": "Security & Compliance",
+    "forecast": 3.292886863212723,
+    "forecast_lower": 1.9046292981116368,
+    "forecast_upper": 4.596480752914132
+  },
+  {
+    "date": "2025-12-22",
+    "category": "Security & Compliance",
+    "forecast": 1.721378347778786,
+    "forecast_lower": 0.46187407126017,
+    "forecast_upper": 3.112377280962585
+  },
+  {
+    "date": "2025-12-23",
+    "category": "Security & Compliance",
+    "forecast": 3.0804227206529395,
+    "forecast_lower": 1.7106613570443916,
+    "forecast_upper": 4.384165074899404
+  },
+  {
+    "date": "2025-12-24",
+    "category": "Security & Compliance",
+    "forecast": 1.7205654607991465,
+    "forecast_lower": 0.405883049431281,
+    "forecast_upper": 3.1272764484608886
+  },
+  {
+    "date": "2025-12-25",
+    "category": "Security & Compliance",
+    "forecast": 2.150491344413202,
+    "forecast_lower": 0.7084088115247104,
+    "forecast_upper": 3.5117648340955987
+  },
+  {
+    "date": "2025-12-26",
+    "category": "Security & Compliance",
+    "forecast": 1.5764080356318135,
+    "forecast_lower": 0.28527305781839074,
+    "forecast_upper": 2.8849637459284496
+  },
+  {
+    "date": "2025-12-27",
+    "category": "Security & Compliance",
+    "forecast": 0.0,
+    "forecast_lower": 0.0,
+    "forecast_upper": 1.1921703606395526
+  },
+  {
+    "date": "2025-12-28",
+    "category": "Security & Compliance",
+    "forecast": 3.4373529780355683,
+    "forecast_lower": 2.0835167536357693,
+    "forecast_upper": 4.850515305456382
+  },
+  {
+    "date": "2025-12-29",
+    "category": "Security & Compliance",
+    "forecast": 1.8658444626020623,
+    "forecast_lower": 0.5098225518587138,
+    "forecast_upper": 3.3770937609247182
+  },
+  {
+    "date": "2025-12-30",
+    "category": "Security & Compliance",
+    "forecast": 3.2248888354743537,
+    "forecast_lower": 1.8850345761879337,
+    "forecast_upper": 4.630996968489734
+  },
+  {
+    "date": "2025-12-31",
+    "category": "Security & Compliance",
+    "forecast": 1.8650315756165639,
+    "forecast_lower": 0.5807676208819719,
+    "forecast_upper": 3.17731046464446
+  },
+  {
+    "date": "2026-01-01",
+    "category": "Security & Compliance",
+    "forecast": 2.2949574592365964,
+    "forecast_lower": 0.9644655152721332,
+    "forecast_upper": 3.5702342659140407
+  },
+  {
+    "date": "2026-01-02",
+    "category": "Security & Compliance",
+    "forecast": 1.7208741504556837,
+    "forecast_lower": 0.3341824418322417,
+    "forecast_upper": 2.9756992221796383
+  },
+  {
+    "date": "2026-01-03",
+    "category": "Security & Compliance",
+    "forecast": 0.07118807081978495,
+    "forecast_lower": 0.0,
+    "forecast_upper": 1.436036941656724
+  },
+  {
+    "date": "2026-01-04",
+    "category": "Security & Compliance",
+    "forecast": 3.581819092861739,
+    "forecast_lower": 2.2647677541413835,
+    "forecast_upper": 4.80829030157246
+  },
+  {
+    "date": "2026-01-05",
+    "category": "Security & Compliance",
+    "forecast": 2.01031057743063,
+    "forecast_lower": 0.6058338703289892,
+    "forecast_upper": 3.375071195725639
+  },
+  {
+    "date": "2026-01-06",
+    "category": "Security & Compliance",
+    "forecast": 3.3693549502979856,
+    "forecast_lower": 2.0252062374772555,
+    "forecast_upper": 4.679260915932261
+  }
+]

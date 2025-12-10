@@ -1,68 +1,107 @@
 {
-  "overall_score": 44.4,
+  "overall_score": 75.1,
   "components": {
     "posting_velocity": {
-      "score": 50.0,
-      "change_pct": 0.0,
-      "status": "insufficient_data"
+      "score": 100,
+      "change_pct": 138.1,
+      "recent_count": 50,
+      "previous_count": 21,
+      "status": "growing",
+      "description": "Job postings increased by 138.1% over the last 7 days"
     },
     "skill_velocity": {
-      "score": 50.0,
-      "trending_skills": [],
-      "status": "insufficient_data"
+      "score": 100,
+      "trending_skills_count": 10,
+      "trending_skills": [
+        {
+          "skill": "Typescript",
+          "growth_pct": 1600.0,
+          "recent_count": 17,
+          "previous_count": 1
+        },
+        {
+          "skill": "React",
+          "growth_pct": 1100.0,
+          "recent_count": 12,
+          "previous_count": 1
+        },
+        {
+          "skill": "Node.Js",
+          "growth_pct": 1000.0,
+          "recent_count": 11,
+          "previous_count": 1
+        },
+        {
+          "skill": "Git",
+          "growth_pct": 800.0,
+          "recent_count": 9,
+          "previous_count": 1
+        },
+        {
+          "skill": "Agile",
+          "growth_pct": 400.0,
+          "recent_count": 30,
+          "previous_count": 6
+        }
+      ],
+      "status": "high_momentum",
+      "description": "Found 10 skills with >50% growth in the last week"
     },
     "forecast_accuracy": {
-      "score": 50.0,
-      "mape": null,
-      "status": "insufficient_data"
+      "score": 28.2,
+      "mape": 28.7,
+      "forecast": 3.0,
+      "actual": 2,
+      "status": "moderate",
+      "description": "Market forecast accuracy: 71.3% (MAPE: 28.7%)"
     },
     "market_activity": {
       "score": 30,
-      "total_alerts": 0,
+      "total_alerts": 12,
       "spikes": 0,
       "drops": 0,
-      "skill_trends": 0,
+      "skill_trends": 12,
       "status": "quiet",
       "description": "Market activity: 0 spikes, 0 drops in the last week"
     },
     "company_diversity": {
-      "score": 24.0,
-      "unique_companies": 12,
+      "score": 100,
+      "unique_companies": 65,
       "top_companies": [
         {
-          "company_name": "Air Force Materiel Command",
-          "job_count": 3
+          "company_name": "Capital One",
+          "job_count": 10
         },
         {
-          "company_name": "Veterans Health Administration",
-          "job_count": 3
+          "company_name": "Walmart",
+          "job_count": 9
         },
         {
-          "company_name": "Air Force Civilian Career Training",
-          "job_count": 2
+          "company_name": "Leidos",
+          "job_count": 5
         },
         {
           "company_name": "Naval Sea Systems Command",
-          "job_count": 2
+          "job_count": 4
         },
         {
-          "company_name": "Technology Transformation Service",
-          "job_count": 2
+          "company_name": "Peraton",
+          "job_count": 3
         }
       ],
-      "status": "concentrated",
-      "description": "12 unique companies actively hiring"
+      "status": "diverse",
+      "description": "65 unique companies actively hiring"
     }
   },
   "interpretation": {
-    "label": "Stable Market",
-    "emoji": "\u27a1\ufe0f",
-    "description": "Moderate activity with predictable patterns",
-    "for_job_seekers": "Standard job search timeline. Focus on fit over timing.",
-    "for_recruiters": "Balanced market. Emphasize culture and growth opportunities."
+    "label": "Growing Market",
+    "emoji": "\ud83d\udcc8",
+    "description": "Positive trends with steady expansion and new opportunities",
+    "for_job_seekers": "Good time to explore opportunities. Market favors candidates.",
+    "for_recruiters": "Normal hiring cycles. Focus on employer brand."
   },
-  "recommendation": "Market is stable. Focus on differentiation through skills and networking.",
-  "calculated_at": "2025-12-10T13:19:08.428362",
+  "recommendation": "Market is growing steadily. Good time to explore new opportunities or negotiate raises.",
+  "calculated_at": "2025-12-10T18:18:04.223114",
   "methodology": {
     "weights": {
       "posting_velocity": 0.3,

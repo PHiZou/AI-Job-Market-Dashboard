@@ -28,21 +28,33 @@ def clean_jobs() -> Dict[str, Any]:
         Dictionary with success status, count, and error message if any.
     """
     try:
-        # Find the most recent raw data file
+        # Find ALL raw data files (including historical backfill)
         raw_dir = Path('data/raw')
         parquet_files = list(raw_dir.glob('jobs_*.parquet'))
-        
+
         if not parquet_files:
             error_msg = "No raw job data files found"
             logger.error(error_msg)
             return {'success': False, 'error': error_msg, 'count': 0}
-        
-        # Use the most recent file
-        latest_file = max(parquet_files, key=lambda p: p.stat().st_mtime)
-        logger.info(f"Loading data from {latest_file}")
-        
-        df = pd.read_parquet(latest_file)
-        logger.info(f"Loaded {len(df)} jobs")
+
+        # Load ALL parquet files to include historical data
+        logger.info(f"Loading data from {len(parquet_files)} files...")
+        dfs = []
+        for file in parquet_files:
+            try:
+                file_df = pd.read_parquet(file)
+                dfs.append(file_df)
+            except Exception as e:
+                logger.warning(f"Could not load {file}: {e}")
+
+        if not dfs:
+            error_msg = "No valid data loaded from parquet files"
+            logger.error(error_msg)
+            return {'success': False, 'error': error_msg, 'count': 0}
+
+        # Combine all dataframes
+        df = pd.concat(dfs, ignore_index=True)
+        logger.info(f"Loaded {len(df)} jobs from {len(dfs)} files")
         
         # Clean each column
         logger.info("Normalizing job titles...")
@@ -59,13 +71,12 @@ def clean_jobs() -> Dict[str, Any]:
         
         logger.info("Normalizing locations...")
         df['location_clean'] = df.apply(lambda row: normalize_location(row.get('job_city', ''), row.get('job_state', ''), row.get('job_country', '')), axis=1)
-        
-        logger.info("Geocoding locations...")
-        df['latitude'], df['longitude'] = zip(*df.apply(
-            lambda row: geocode_location(row['location_clean']),
-            axis=1
-        ))
-        
+
+        # Skip geocoding for faster pipeline (not needed for JMMI)
+        logger.info("Skipping geocoding (not required for analytics)...")
+        df['latitude'] = None
+        df['longitude'] = None
+
         logger.info("Parsing job posted dates...")
         df['posted_date'] = df.apply(lambda row: parse_date(row.get('job_posted_at_datetime_utc', '')), axis=1)
         
@@ -78,12 +89,24 @@ def clean_jobs() -> Dict[str, Any]:
         )
         duplicates_removed = initial_count - len(df)
         logger.info(f"Removed {duplicates_removed} duplicate jobs")
-        
+
+        # Ensure numeric columns are proper types (fix mixed type issues)
+        logger.info("Fixing data types for Parquet compatibility...")
+        # Convert all salary-related columns to numeric
+        for col in ['salary_min', 'salary_max', 'job_min_salary', 'job_max_salary']:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce')
+
+        # Convert all object columns to strings to avoid mixed types
+        for col in df.columns:
+            if df[col].dtype == 'object':
+                df[col] = df[col].fillna('').astype(str)
+
         # Save cleaned data
         output_dir = Path('data/curated')
         output_dir.mkdir(parents=True, exist_ok=True)
         output_file = output_dir / 'jobs_clean.parquet'
-        
+
         df.to_parquet(output_file, index=False, engine='pyarrow')
         logger.info(f"Saved {len(df)} cleaned jobs to {output_file}")
         

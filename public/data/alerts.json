@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Typescript",
+    "recent_count": 17,
+    "previous_count": 1,
+    "growth_rate": 1600.0,
+    "message": "Emerging skill trend: Typescript (+1600.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206733",
+    "id": "skill_trend_unknown_1765408684.206746"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "PostgreSQL",
+    "recent_count": 2,
+    "previous_count": 1,
+    "growth_rate": 100.0,
+    "message": "Emerging skill trend: PostgreSQL (+100.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206752",
+    "id": "skill_trend_unknown_1765408684.206754"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Javascript",
+    "recent_count": 20,
+    "previous_count": 8,
+    "growth_rate": 150.0,
+    "message": "Emerging skill trend: Javascript (+150.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206756",
+    "id": "skill_trend_unknown_1765408684.206758"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Agile",
+    "recent_count": 30,
+    "previous_count": 6,
+    "growth_rate": 400.0,
+    "message": "Emerging skill trend: Agile (+400.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206760",
+    "id": "skill_trend_unknown_1765408684.206762"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "TypeScript",
+    "recent_count": 2,
+    "previous_count": 1,
+    "growth_rate": 100.0,
+    "message": "Emerging skill trend: TypeScript (+100.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206764",
+    "id": "skill_trend_unknown_1765408684.206766"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Python",
+    "recent_count": 26,
+    "previous_count": 9,
+    "growth_rate": 188.88888888888889,
+    "message": "Emerging skill trend: Python (+188.9% growth)",
+    "generated_at": "2025-12-10T18:18:04.206768",
+    "id": "skill_trend_unknown_1765408684.20677"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Git",
+    "recent_count": 9,
+    "previous_count": 1,
+    "growth_rate": 800.0,
+    "message": "Emerging skill trend: Git (+800.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206772",
+    "id": "skill_trend_unknown_1765408684.206773"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Java",
+    "recent_count": 12,
+    "previous_count": 7,
+    "growth_rate": 71.42857142857143,
+    "message": "Emerging skill trend: Java (+71.4% growth)",
+    "generated_at": "2025-12-10T18:18:04.206779",
+    "id": "skill_trend_unknown_1765408684.206781"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Linux",
+    "recent_count": 4,
+    "previous_count": 2,
+    "growth_rate": 100.0,
+    "message": "Emerging skill trend: Linux (+100.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206784",
+    "id": "skill_trend_unknown_1765408684.206786"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "React",
+    "recent_count": 12,
+    "previous_count": 1,
+    "growth_rate": 1100.0,
+    "message": "Emerging skill trend: React (+1100.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206788",
+    "id": "skill_trend_unknown_1765408684.20679"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Node.Js",
+    "recent_count": 11,
+    "previous_count": 1,
+    "growth_rate": 1000.0,
+    "message": "Emerging skill trend: Node.Js (+1000.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206792",
+    "id": "skill_trend_unknown_1765408684.206794"
+  },
+  {
+    "type": "skill_trend",
+    "severity": "medium",
+    "skill": "Css",
+    "recent_count": 9,
+    "previous_count": 2,
+    "growth_rate": 350.0,
+    "message": "Emerging skill trend: Css (+350.0% growth)",
+    "generated_at": "2025-12-10T18:18:04.206796",
+    "id": "skill_trend_unknown_1765408684.206797"
+  }
+]

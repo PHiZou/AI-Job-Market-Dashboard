@@ -86,7 +86,29 @@ def backfill_usajobs(days_ago: int, date_str: str) -> bool:
         )
 
         if result['success']:
-            logger.info(f"✓ USAJobs backfill successful: {result['count']} jobs")
+            # Rename the file to use the historical date instead of today's date
+            import os
+            from datetime import datetime
+
+            today = datetime.now().strftime('%Y-%m-%d')
+            today_file = Path(f'data/raw/jobs_usajobs_{today}.parquet')
+            historical_file = Path(f'data/raw/jobs_usajobs_{date_str}.parquet')
+
+            if today_file.exists():
+                # If historical file already exists, load both and combine
+                if historical_file.exists():
+                    import pandas as pd
+                    df_today = pd.read_parquet(today_file)
+                    df_historical = pd.read_parquet(historical_file)
+                    df_combined = pd.concat([df_historical, df_today], ignore_index=True)
+                    df_combined = df_combined.drop_duplicates(subset=['job_id'], keep='first')
+                    df_combined.to_parquet(historical_file, index=False, engine='pyarrow')
+                    os.remove(today_file)
+                else:
+                    # Just rename
+                    os.rename(today_file, historical_file)
+
+            logger.info(f"✓ USAJobs backfill successful: {result['count']} jobs → {historical_file}")
             return True
         else:
             logger.warning(f"✗ USAJobs backfill failed: {result.get('error')}")
