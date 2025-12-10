@@ -7,7 +7,8 @@ import {
   type ForecastData,
   type SkillTrend,
   type CompanyHiring,
-  type Alert
+  type Alert,
+  type JMMIData
 } from '../../utils/dataLoaders';
 
 // Lazy load heavy components for code splitting
@@ -17,6 +18,7 @@ const SkillsLeaderboard = lazy(() => import('./SkillsLeaderboard'));
 const CompanyLeaderboard = lazy(() => import('./CompanyLeaderboard'));
 const AlertsPanel = lazy(() => import('./AlertsPanel'));
 const MapView = lazy(() => import('./MapView'));
+const JMMIGauge = lazy(() => import('./JMMIGauge'));
 
 // Loading Skeleton Component
 const LoadingSkeleton: React.FC = () => {
@@ -63,6 +65,7 @@ export const Dashboard: React.FC = () => {
   const [skills, setSkills] = useState<SkillTrend[]>([]);
   const [companies, setCompanies] = useState<CompanyHiring[]>([]);
   const [alerts, setAlerts] = useState<Alert[]>([]);
+  const [jmmi, setJmmi] = useState<JMMIData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [isDark, setIsDark] = useState(false);
@@ -99,7 +102,7 @@ export const Dashboard: React.FC = () => {
         const data = await loadAllData();
         setTrends(data.trends);
         setForecasts(data.forecasts);
-        
+
         // Convert SkillsData object to SkillTrend array
         const skillsArray: SkillTrend[] = [];
         if (data.skills && data.skills.overall) {
@@ -111,16 +114,17 @@ export const Dashboard: React.FC = () => {
           });
         }
         setSkills(skillsArray);
-        
+
         // CompanyData is compatible with CompanyHiring
         setCompanies(data.companies as CompanyHiring[]);
-        
+
         setAlerts(data.alerts);
-        
+        setJmmi(data.jmmi);
+
         // Calculate total jobs and last updated
         const total = data.trends.reduce((sum, t) => sum + t.job_count, 0);
         setTotalJobs(total);
-        
+
         // Get last updated from most recent alert
         if (data.alerts.length > 0) {
           const timestamps = data.alerts
@@ -132,7 +136,7 @@ export const Dashboard: React.FC = () => {
             setLastUpdated(timestamps[0]);
           }
         }
-        
+
         setError(null);
       } catch (err) {
         const errorMessage = err instanceof Error ? err.message : 'Failed to load data';
@@ -219,6 +223,23 @@ export const Dashboard: React.FC = () => {
 
   return (
     <div className="space-y-8">
+      {/* Job Market Momentum Index */}
+      {jmmi && (
+        <Card
+          title="Job Market Momentum Index (JMMI)"
+          description="Composite metric quantifying hiring market velocity across 5 dimensions"
+          icon={
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          }
+        >
+          <Suspense fallback={<div className="h-[600px] bg-gray-100 dark:bg-gray-800 animate-pulse rounded-lg" />}>
+            <JMMIGauge jmmi={jmmi} isDark={isDark} />
+          </Suspense>
+        </Card>
+      )}
+
       {/* Hiring Volume Trends */}
       <Card
         title="Hiring Volume Trends"

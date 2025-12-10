@@ -51,7 +51,12 @@ def export_json() -> Dict[str, Any]:
         logger.info("Exporting alerts data...")
         if export_alerts(output_dir):
             files_created.append('alerts.json')
-        
+
+        # Export JMMI
+        logger.info("Exporting JMMI data...")
+        if export_jmmi(output_dir):
+            files_created.append('jmmi.json')
+
         logger.info(f"Exported {len(files_created)} JSON files")
         
         return {
@@ -210,25 +215,48 @@ def export_alerts(output_dir: Path) -> bool:
         if not input_file.exists():
             logger.warning("Alerts data not found, skipping...")
             return False
-        
+
         with open(input_file, 'r') as f:
             alerts_data = json.load(f)
-        
+
         # Sort by date (most recent first)
         alerts_data.sort(key=lambda x: x.get('date', ''), reverse=True)
-        
+
         # Limit to most recent 50 alerts
         alerts_data = alerts_data[:50]
-        
+
         output_file = output_dir / 'alerts.json'
         with open(output_file, 'w') as f:
             json.dump(alerts_data, f, indent=2)
-        
+
         logger.info(f"Exported {len(alerts_data)} alerts")
         return True
-        
+
     except Exception as e:
         logger.error(f"Error exporting alerts: {str(e)}")
+        return False
+
+
+def export_jmmi(output_dir: Path) -> bool:
+    """Export JMMI data."""
+    try:
+        input_file = Path('data/curated/jmmi.json')
+        if not input_file.exists():
+            logger.warning("JMMI data not found, skipping...")
+            return False
+
+        with open(input_file, 'r') as f:
+            jmmi_data = json.load(f)
+
+        output_file = output_dir / 'jmmi.json'
+        with open(output_file, 'w') as f:
+            json.dump(jmmi_data, f, indent=2)
+
+        logger.info(f"Exported JMMI data (score: {jmmi_data.get('overall_score', 'N/A')})")
+        return True
+
+    except Exception as e:
+        logger.error(f"Error exporting JMMI: {str(e)}")
         return False
 
 

@@ -49,21 +49,53 @@ def run_pipeline() -> Dict[str, Any]:
         logger.info("Starting ETL Pipeline")
         logger.info("=" * 80)
         
-        # Stage 1: Fetch jobs
-        logger.info("\n[Stage 1/8] Fetching jobs from API...")
+        # Stage 1: Fetch jobs from multiple sources
+        logger.info("\n[Stage 1/9] Fetching jobs from multiple sources...")
         stage_start = time.time()
-        from etl.fetch_jobs import fetch_jobs
-        # Reduced to 5 pages (5 API calls) to conserve API quota
-        # Each page fetches 10 jobs = ~50 jobs per run
-        fetch_result = fetch_jobs(num_pages=5, jobs_per_page=10)
+
+        # Import multi-source fetcher (falls back to single source if unavailable)
+        try:
+            from etl.fetch_multi_source import fetch_from_all_sources
+            fetch_result = fetch_from_all_sources(
+                query="software engineer",  # Simple query for USAJobs compatibility
+                jsearch_pages=3,  # Reduced to conserve quota
+                usajobs_pages=5   # USAJobs is free, so we can fetch more
+            )
+        except ImportError:
+            # Fallback to single source (backward compatibility)
+            logger.warning("Multi-source fetcher not available, using JSearch only")
+            from etl.fetch_jobs import fetch_jobs
+            fetch_result = fetch_jobs(num_pages=5, jobs_per_page=10)
+
         execution_status['stages']['fetch'] = {
             'success': fetch_result['success'],
             'duration': time.time() - stage_start,
             'jobs_fetched': fetch_result.get('count', 0)
         }
+
+        # If fetch fails, check for existing data from today
         if not fetch_result['success']:
-            raise Exception(f"Fetch stage failed: {fetch_result.get('error')}")
-        logger.info(f"✓ Fetched {fetch_result.get('count', 0)} jobs")
+            logger.warning("Fetch failed, checking for existing data files...")
+            today = datetime.now().strftime('%Y-%m-%d')
+            existing_file = Path(f'data/raw/jobs_{today}.parquet')
+
+            if existing_file.exists():
+                logger.info(f"✓ Using existing data file: {existing_file}")
+                import pandas as pd
+                df = pd.read_parquet(existing_file)
+                fetch_result = {
+                    'success': True,
+                    'count': len(df),
+                    'output_file': str(existing_file),
+                    'from_cache': True
+                }
+                execution_status['stages']['fetch']['success'] = True
+                execution_status['stages']['fetch']['jobs_fetched'] = len(df)
+                execution_status['stages']['fetch']['from_cache'] = True
+            else:
+                raise Exception(f"Fetch stage failed and no cached data available: {fetch_result.get('error')}")
+
+        logger.info(f"✓ Fetched {fetch_result.get('count', 0)} jobs{' (from cache)' if fetch_result.get('from_cache') else ''}")
         
         # Stage 2: Clean jobs
         logger.info("\n[Stage 2/8] Cleaning and normalizing job data...")
@@ -135,7 +167,7 @@ def run_pipeline() -> Dict[str, Any]:
         logger.info(f"✓ Generated {forecast_result.get('forecast_days', 30)}-day forecasts")
         
         # Stage 7: Generate alerts
-        logger.info("\n[Stage 7/8] Generating alerts for anomalies...")
+        logger.info("\n[Stage 7/9] Generating alerts for anomalies...")
         stage_start = time.time()
         from etl.generate_alerts import generate_alerts
         alerts_result = generate_alerts()
@@ -147,9 +179,24 @@ def run_pipeline() -> Dict[str, Any]:
         if not alerts_result['success']:
             raise Exception(f"Alert generation failed: {alerts_result.get('error')}")
         logger.info(f"✓ Generated {alerts_result.get('count', 0)} alerts")
-        
-        # Stage 8: Export to JSON
-        logger.info("\n[Stage 8/8] Exporting data to JSON for frontend...")
+
+        # Stage 8: Compute JMMI
+        logger.info("\n[Stage 8/9] Computing Job Market Momentum Index...")
+        stage_start = time.time()
+        from etl.compute_jmmi import compute_jmmi
+        jmmi_result = compute_jmmi()
+        execution_status['stages']['jmmi'] = {
+            'success': jmmi_result['success'],
+            'duration': time.time() - stage_start,
+            'jmmi_score': jmmi_result.get('jmmi', {}).get('overall_score', 0)
+        }
+        if not jmmi_result['success']:
+            raise Exception(f"JMMI computation failed: {jmmi_result.get('error')}")
+        jmmi_score = jmmi_result.get('jmmi', {}).get('overall_score', 0)
+        logger.info(f"✓ Computed JMMI: {jmmi_score}/100")
+
+        # Stage 9: Export to JSON
+        logger.info("\n[Stage 9/9] Exporting data to JSON for frontend...")
         stage_start = time.time()
         from etl.export_json import export_json
         export_result = export_json()

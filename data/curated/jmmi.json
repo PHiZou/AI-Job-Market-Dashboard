@@ -1,0 +1,76 @@
+{
+  "overall_score": 44.4,
+  "components": {
+    "posting_velocity": {
+      "score": 50.0,
+      "change_pct": 0.0,
+      "status": "insufficient_data"
+    },
+    "skill_velocity": {
+      "score": 50.0,
+      "trending_skills": [],
+      "status": "insufficient_data"
+    },
+    "forecast_accuracy": {
+      "score": 50.0,
+      "mape": null,
+      "status": "insufficient_data"
+    },
+    "market_activity": {
+      "score": 30,
+      "total_alerts": 0,
+      "spikes": 0,
+      "drops": 0,
+      "skill_trends": 0,
+      "status": "quiet",
+      "description": "Market activity: 0 spikes, 0 drops in the last week"
+    },
+    "company_diversity": {
+      "score": 24.0,
+      "unique_companies": 12,
+      "top_companies": [
+        {
+          "company_name": "Air Force Materiel Command",
+          "job_count": 3
+        },
+        {
+          "company_name": "Veterans Health Administration",
+          "job_count": 3
+        },
+        {
+          "company_name": "Air Force Civilian Career Training",
+          "job_count": 2
+        },
+        {
+          "company_name": "Naval Sea Systems Command",
+          "job_count": 2
+        },
+        {
+          "company_name": "Technology Transformation Service",
+          "job_count": 2
+        }
+      ],
+      "status": "concentrated",
+      "description": "12 unique companies actively hiring"
+    }
+  },
+  "interpretation": {
+    "label": "Stable Market",
+    "emoji": "\u27a1\ufe0f",
+    "description": "Moderate activity with predictable patterns",
+    "for_job_seekers": "Standard job search timeline. Focus on fit over timing.",
+    "for_recruiters": "Balanced market. Emphasize culture and growth opportunities."
+  },
+  "recommendation": "Market is stable. Focus on differentiation through skills and networking.",
+  "calculated_at": "2025-12-10T13:19:08.428362",
+  "methodology": {
+    "weights": {
+      "posting_velocity": 0.3,
+      "skill_velocity": 0.25,
+      "forecast_accuracy": 0.2,
+      "market_activity": 0.15,
+      "company_diversity": 0.1
+    },
+    "scale": "0-100 (higher = stronger momentum)"
+  }
+}
