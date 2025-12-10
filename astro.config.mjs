@@ -12,8 +12,10 @@ export default defineConfig({
   ],
   output: 'static',
   publicDir: 'public',
+  // Vercel will automatically set VERCEL_URL
   site: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined,
-  base: process.env.BASE_PATH || '/',
+  // Use root path for Vercel (no base path needed)
+  base: '/',
   vite: {
     define: {
       global: 'globalThis',
@@ -23,7 +25,7 @@ export default defineConfig({
     },
     build: {
       cssMinify: true,
-      minify: 'terser',
+      minify: 'esbuild', // Use esbuild (default, faster, no extra deps)
       rollupOptions: {
         output: {
           manualChunks: {
