@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen)](https://your-demo-url.vercel.app) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **Live Demo**: [View Dashboard]([(https://ai-job-market-dashboard.vercel.app/projects/job-market-dashboard)) | [About Page](https://your-demo-url.vercel.app/projects/job-market-dashboard/about)
+> **Live Demo**: [View Dashboard](https://ai-job-market-dashboard.vercel.app/projects/job-market-dashboard) | [About Page](https://your-demo-url.vercel.app/projects/job-market-dashboard/about)
 
 A production-style system that ingests job postings daily, processes them with NLP/AI, generates hiring forecasts, and displays insights in an interactive Astro dashboard.
 
