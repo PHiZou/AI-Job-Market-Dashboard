@@ -55,6 +55,7 @@ export interface SkillTrend {
   skill: string;
   count: number;
   growth_rate?: number;
+  trend_values?: number[]; // Historical values for sparkline
 }
 
 export interface CategoryForecast {
@@ -71,6 +72,7 @@ export interface JobCategoryCount {
 export interface CompanyHiring {
   company_name: string;
   job_count: number;
+  wow_change?: number; // Week-over-week percentage change
 }
 
 export interface AlertItem extends Alert {
@@ -405,6 +407,66 @@ export async function loadAllData(): Promise<{
     console.error('Error loading all data:', error);
     throw error;
   }
+}
+
+/**
+ * Extract skill trend values from by_date data for sparklines.
+ * Returns last N days of frequency data for a given skill.
+ */
+export function extractSkillTrendValues(
+  skillName: string,
+  byDateData: Record<string, Record<string, number>> | undefined,
+  days: number = 14
+): number[] {
+  if (!byDateData) return [];
+
+  // Get all dates sorted chronologically
+  const dates = Object.keys(byDateData).sort();
+
+  // Take last N days
+  const recentDates = dates.slice(-days);
+
+  // Extract values for this skill across those dates
+  const values = recentDates.map(date => {
+    const skillsOnDate = byDateData[date];
+    return skillsOnDate?.[skillName] || 0;
+  });
+
+  return values;
+}
+
+/**
+ * Calculate real month-over-month growth rate from historical data.
+ * Compares last 30 days avg vs previous 30 days avg.
+ */
+export function calculateRealMoMGrowth(
+  skillName: string,
+  byDateData: Record<string, Record<string, number>> | undefined
+): number | undefined {
+  if (!byDateData) return undefined;
+
+  const dates = Object.keys(byDateData).sort();
+  if (dates.length < 30) return undefined;
+
+  // Last 30 days
+  const last30Days = dates.slice(-30);
+  const last30Sum = last30Days.reduce((sum, date) => {
+    return sum + (byDateData[date]?.[skillName] || 0);
+  }, 0);
+  const last30Avg = last30Sum / 30;
+
+  // Previous 30 days (days 31-60)
+  if (dates.length < 60) return undefined;
+  const prev30Days = dates.slice(-60, -30);
+  const prev30Sum = prev30Days.reduce((sum, date) => {
+    return sum + (byDateData[date]?.[skillName] || 0);
+  }, 0);
+  const prev30Avg = prev30Sum / 30;
+
+  if (prev30Avg === 0) return undefined;
+
+  // Calculate percentage growth
+  return ((last30Avg - prev30Avg) / prev30Avg) * 100;
 }
 
 /**

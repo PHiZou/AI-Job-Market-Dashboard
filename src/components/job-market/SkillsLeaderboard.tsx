@@ -106,13 +106,15 @@ export const SkillsLeaderboard: React.FC<SkillsLeaderboardProps> = ({
     return related.slice(0, 3);
   };
 
-  // Generate mock trend data for sparklines (in real app, this would come from by_date data)
-  const generateTrendData = (count: number): number[] => {
-    const base = count;
-    return Array.from({ length: 7 }, (_, i) => {
-      const variation = (Math.random() - 0.5) * 0.3;
-      return Math.max(0, base * (1 + variation));
-    });
+  // Get trend data from skill's historical values or generate fallback
+  const getTrendData = (skill: SkillTrend): number[] => {
+    // Use real historical data if available
+    if (skill.trend_values && skill.trend_values.length >= 2) {
+      return skill.trend_values;
+    }
+
+    // Fallback to a simple line if no historical data
+    return [skill.count, skill.count];
   };
 
   return (
@@ -179,7 +181,7 @@ export const SkillsLeaderboard: React.FC<SkillsLeaderboardProps> = ({
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 {skillsList.map((skill, index) => {
                   const mom = getMoMIndicator(skill.growth_rate);
-                  const trendData = generateTrendData(skill.count);
+                  const trendData = getTrendData(skill);
                   const maxCount = Math.max(...skillsList.map(s => s.count));
 
                   return (

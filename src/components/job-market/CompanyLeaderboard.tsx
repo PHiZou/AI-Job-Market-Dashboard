@@ -67,11 +67,11 @@ export const CompanyLeaderboard: React.FC<CompanyLeaderboardProps> = ({
     }
   };
 
-  // Mock week-over-week comparison (in real app, this would come from historical data)
-  const getWeekComparison = (jobCount: number) => {
-    const change = (Math.random() - 0.5) * 0.4; // Mock ±20% change
-    const prevWeek = Math.round(jobCount / (1 + change));
-    const pctChange = change * 100;
+  // Get week-over-week comparison from company data
+  const getWeekComparison = (company: CompanyHiring) => {
+    // Use real WoW data if available, otherwise return no change
+    const pctChange = company.wow_change ?? 0;
+    const prevWeek = pctChange !== 0 ? Math.round(company.job_count / (1 + pctChange / 100)) : company.job_count;
     return { prevWeek, pctChange };
   };
 
@@ -170,7 +170,7 @@ export const CompanyLeaderboard: React.FC<CompanyLeaderboardProps> = ({
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 {sortedData.map((company, index) => {
-                  const { prevWeek, pctChange } = getWeekComparison(company.job_count);
+                  const { prevWeek, pctChange } = getWeekComparison(company);
                   const isPositive = pctChange > 0;
                   const initials = getInitials(company.company_name);
                   const color = getCompanyColor(company.company_name);

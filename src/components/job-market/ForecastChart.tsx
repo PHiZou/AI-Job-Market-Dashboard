@@ -47,7 +47,7 @@ export const ForecastChart: React.FC<ForecastChartProps> = ({ forecastData, hist
       const gridColor = darkMode ? '#374151' : '#e5e7eb';
       const historicalColor = darkMode ? '#60a5fa' : '#3b82f6';
       const forecastColor = darkMode ? '#34d399' : '#10b981';
-      const confidenceColor = darkMode ? 'rgba(52, 211, 153, 0.2)' : 'rgba(16, 185, 129, 0.2)';
+      const confidenceColor = darkMode ? 'rgba(52, 211, 153, 0.3)' : 'rgba(16, 185, 129, 0.3)'; // Increased opacity for prominence
 
       const categories = Array.from(new Set(forecastData.map(d => d.category)));
       const displayCategory = selectedCategory === 'All' ? categories[0] : selectedCategory;

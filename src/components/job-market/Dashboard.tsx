@@ -3,6 +3,8 @@ import DataQualityIndicator from './DataQualityIndicator';
 import EmptyState from './EmptyState';
 import {
   loadAllData,
+  extractSkillTrendValues,
+  calculateRealMoMGrowth,
   type TrendData,
   type ForecastData,
   type SkillTrend,
@@ -103,13 +105,21 @@ export const Dashboard: React.FC = () => {
         setTrends(data.trends);
         setForecasts(data.forecasts);
 
-        // Convert SkillsData object to SkillTrend array
+        // Convert SkillsData object to SkillTrend array with historical trends
         const skillsArray: SkillTrend[] = [];
         if (data.skills && data.skills.overall) {
           Object.entries(data.skills.overall).forEach(([skill, count]) => {
+            // Extract historical trend values for sparklines (last 14 days)
+            const trendValues = extractSkillTrendValues(skill, data.skills.by_date, 14);
+
+            // Calculate real month-over-month growth from historical data
+            const realGrowthRate = calculateRealMoMGrowth(skill, data.skills.by_date);
+
             skillsArray.push({
               skill,
               count: typeof count === 'number' ? count : 0,
+              trend_values: trendValues.length > 0 ? trendValues : undefined,
+              growth_rate: realGrowthRate,
             });
           });
         }

@@ -39,6 +39,8 @@ const DARK_COLORS = [
 export const HiringVolumeChart: React.FC<HiringVolumeChartProps> = ({ data, isDark = false }) => {
   const chartRef = useRef<HTMLDivElement>(null);
   const [darkMode, setDarkMode] = useState(isDark);
+  const [show7DayAvg, setShow7DayAvg] = useState(false);
+  const [show30DayAvg, setShow30DayAvg] = useState(false);
 
   useEffect(() => {
     // Listen for dark mode changes
@@ -66,24 +68,28 @@ export const HiringVolumeChart: React.FC<HiringVolumeChartProps> = ({ data, isDa
 
       // Group data by category
       const categories = Array.from(new Set(data.map(d => d.category)));
-      const traces = categories.map((category, idx) => {
+      const traces: any[] = [];
+
+      // Add raw data traces for each category
+      categories.forEach((category, idx) => {
         const categoryData = data
           .filter(d => d.category === category)
           .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
-        return {
+        // Raw data trace (solid line)
+        traces.push({
           x: categoryData.map(d => d.date),
           y: categoryData.map(d => d.job_count),
           name: category,
           type: 'scatter' as const,
           mode: 'lines+markers' as const,
-          line: { 
+          line: {
             width: 3,
             shape: 'spline' as const,
             smoothing: 1.3,
             color: colors[idx % colors.length]
           },
-          marker: { 
+          marker: {
             size: 6,
             color: colors[idx % colors.length],
             line: { width: 1, color: bgColor }
@@ -92,7 +98,54 @@ export const HiringVolumeChart: React.FC<HiringVolumeChartProps> = ({ data, isDa
                          '<b>Date:</b> %{x|%b %d, %Y}<br>' +
                          '<b>Job Count:</b> %{y:,.0f}<br>' +
                          '<extra></extra>',
-        };
+          legendgroup: category,
+        });
+
+        // Add 7-day rolling average if enabled
+        if (show7DayAvg) {
+          traces.push({
+            x: categoryData.map(d => d.date),
+            y: categoryData.map(d => d.rolling_7d),
+            name: `${category} (7-day avg)`,
+            type: 'scatter' as const,
+            mode: 'lines' as const,
+            line: {
+              width: 2,
+              dash: 'dash' as const,
+              color: colors[idx % colors.length]
+            },
+            opacity: 0.7,
+            hovertemplate: '<b>%{fullData.name}</b><br>' +
+                           '<b>Date:</b> %{x|%b %d, %Y}<br>' +
+                           '<b>7-day Avg:</b> %{y:,.1f}<br>' +
+                           '<extra></extra>',
+            legendgroup: category,
+            showlegend: true,
+          });
+        }
+
+        // Add 30-day rolling average if enabled
+        if (show30DayAvg) {
+          traces.push({
+            x: categoryData.map(d => d.date),
+            y: categoryData.map(d => d.rolling_30d),
+            name: `${category} (30-day avg)`,
+            type: 'scatter' as const,
+            mode: 'lines' as const,
+            line: {
+              width: 2,
+              dash: 'dot' as const,
+              color: colors[idx % colors.length]
+            },
+            opacity: 0.6,
+            hovertemplate: '<b>%{fullData.name}</b><br>' +
+                           '<b>Date:</b> %{x|%b %d, %Y}<br>' +
+                           '<b>30-day Avg:</b> %{y:,.1f}<br>' +
+                           '<extra></extra>',
+            legendgroup: category,
+            showlegend: true,
+          });
+        }
       });
 
       const layout = {
@@ -170,9 +223,43 @@ export const HiringVolumeChart: React.FC<HiringVolumeChartProps> = ({ data, isDa
         });
       }
     };
-  }, [data, darkMode]);
+  }, [data, darkMode, show7DayAvg, show30DayAvg]);
 
-  return <div ref={chartRef} className="w-full" style={{ height: '550px' }} />;
+  return (
+    <div className="space-y-4">
+      {/* Rolling Average Controls */}
+      <div className="flex flex-wrap items-center gap-4 px-2">
+        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+          Show rolling averages:
+        </span>
+        <label className="flex items-center gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={show7DayAvg}
+            onChange={(e) => setShow7DayAvg(e.target.checked)}
+            className="w-4 h-4 text-indigo-600 bg-gray-100 border-gray-300 rounded focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          />
+          <span className="text-sm text-gray-700 dark:text-gray-300">
+            7-day average (dashed)
+          </span>
+        </label>
+        <label className="flex items-center gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={show30DayAvg}
+            onChange={(e) => setShow30DayAvg(e.target.checked)}
+            className="w-4 h-4 text-indigo-600 bg-gray-100 border-gray-300 rounded focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          />
+          <span className="text-sm text-gray-700 dark:text-gray-300">
+            30-day average (dotted)
+          </span>
+        </label>
+      </div>
+
+      {/* Chart */}
+      <div ref={chartRef} className="w-full" style={{ height: '550px' }} />
+    </div>
+  );
 };
 
 export default HiringVolumeChart;
