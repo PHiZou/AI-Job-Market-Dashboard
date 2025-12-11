@@ -1,73 +1,85 @@
 {
-  "overall_score": 75.1,
+  "overall_score": 61.2,
   "components": {
     "posting_velocity": {
-      "score": 100,
-      "change_pct": 138.1,
-      "recent_count": 50,
-      "previous_count": 21,
+      "score": 87.5,
+      "change_pct": 37.5,
+      "recent_count": 110,
+      "previous_count": 80,
       "status": "growing",
-      "description": "Job postings increased by 138.1% over the last 7 days"
+      "description": "Job postings increased by 37.5% over the last 7 days"
     },
     "skill_velocity": {
       "score": 100,
       "trending_skills_count": 10,
       "trending_skills": [
         {
-          "skill": "Typescript",
-          "growth_pct": 1600.0,
-          "recent_count": 17,
-          "previous_count": 1
-        },
-        {
-          "skill": "React",
-          "growth_pct": 1100.0,
-          "recent_count": 12,
-          "previous_count": 1
-        },
-        {
           "skill": "Node.Js",
-          "growth_pct": 1000.0,
-          "recent_count": 11,
-          "previous_count": 1
-        },
-        {
-          "skill": "Git",
           "growth_pct": 800.0,
           "recent_count": 9,
           "previous_count": 1
         },
         {
-          "skill": "Agile",
-          "growth_pct": 400.0,
-          "recent_count": 30,
-          "previous_count": 6
+          "skill": "React",
+          "growth_pct": 300.0,
+          "recent_count": 12,
+          "previous_count": 3
+        },
+        {
+          "skill": "Docker",
+          "growth_pct": 300.0,
+          "recent_count": 4,
+          "previous_count": 1
+        },
+        {
+          "skill": "Sql",
+          "growth_pct": 166.7,
+          "recent_count": 8,
+          "previous_count": 3
+        },
+        {
+          "skill": "JavaScript",
+          "growth_pct": 150.0,
+          "recent_count": 5,
+          "previous_count": 2
         }
       ],
       "status": "high_momentum",
       "description": "Found 10 skills with >50% growth in the last week"
     },
     "forecast_accuracy": {
-      "score": 28.2,
-      "mape": 28.7,
-      "forecast": 3.0,
-      "actual": 2,
-      "status": "moderate",
-      "description": "Market forecast accuracy: 71.3% (MAPE: 28.7%)"
+      "score": 0,
+      "mape": 100.0,
+      "forecast": 0.0,
+      "actual": 21,
+      "status": "volatile",
+      "description": "Market forecast accuracy: 0.0% (MAPE: 100.0%)"
     },
     "market_activity": {
-      "score": 30,
-      "total_alerts": 12,
-      "spikes": 0,
-      "drops": 0,
-      "skill_trends": 12,
-      "status": "quiet",
-      "description": "Market activity: 0 spikes, 0 drops in the last week"
+      "score": 0,
+      "total_alerts": 17,
+      "spikes": 1,
+      "drops": 6,
+      "skill_trends": 10,
+      "status": "moderate",
+      "description": "Market activity: 1 spikes, 6 drops in the last week"
     },
     "company_diversity": {
       "score": 100,
-      "unique_companies": 65,
+      "unique_companies": 112,
       "top_companies": [
+        {
+          "company_name": "Veterans Health Administration",
+          "job_count": 44
+        },
+        {
+          "company_name": "Naval Sea Systems Command",
+          "job_count": 11
+        },
+        {
+          "company_name": "Air National Guard Units",
+          "job_count": 10
+        },
         {
           "company_name": "Capital One",
           "job_count": 10
@@ -75,22 +87,10 @@
         {
           "company_name": "Walmart",
           "job_count": 9
-        },
-        {
-          "company_name": "Leidos",
-          "job_count": 5
-        },
-        {
-          "company_name": "Naval Sea Systems Command",
-          "job_count": 4
-        },
-        {
-          "company_name": "Peraton",
-          "job_count": 3
         }
       ],
       "status": "diverse",
-      "description": "65 unique companies actively hiring"
+      "description": "112 unique companies actively hiring"
     }
   },
   "interpretation": {
@@ -101,7 +101,7 @@
     "for_recruiters": "Normal hiring cycles. Focus on employer brand."
   },
   "recommendation": "Market is growing steadily. Good time to explore new opportunities or negotiate raises.",
-  "calculated_at": "2025-12-10T18:18:04.223114",
+  "calculated_at": "2025-12-11T16:08:10.623932",
   "methodology": {
     "weights": {
       "posting_velocity": 0.3,

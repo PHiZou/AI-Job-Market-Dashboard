@@ -1,90 +1,118 @@
 [
   {
     "date": "2025-10-16",
-    "category": "Frontend Development",
+    "category": "Machine Learning & AI",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
   },
   {
     "date": "2025-10-21",
-    "category": "Frontend Development",
+    "category": "Machine Learning & AI",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
   },
   {
     "date": "2025-10-27",
+    "category": "Machine Learning & AI",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-11-09",
+    "category": "QA & Testing",
+    "job_count": 2,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-11-10",
     "category": "Frontend Development",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
   },
   {
-    "date": "2025-11-09",
-    "category": "Cloud & Architecture",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-09",
-    "category": "DevOps & Infrastructure",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-10",
-    "category": "Security & Compliance",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
     "date": "2025-11-11",
-    "category": "Product Management",
+    "category": "Security & Compliance",
     "job_count": 2,
     "rolling_7d": 2.0,
     "rolling_30d": 2.0
   },
   {
     "date": "2025-11-12",
-    "category": "Full Stack Development",
+    "category": "QA & Testing",
     "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
+    "rolling_7d": 1.5,
+    "rolling_30d": 1.5
   },
   {
     "date": "2025-11-13",
-    "category": "Security & Compliance",
+    "category": "Frontend Development",
     "job_count": 2,
     "rolling_7d": 1.5,
     "rolling_30d": 1.5
   },
   {
-    "date": "2025-11-14",
-    "category": "Machine Learning & AI",
+    "date": "2025-11-13",
+    "category": "Full Stack Development",
     "job_count": 2,
     "rolling_7d": 2.0,
     "rolling_30d": 2.0
   },
   {
     "date": "2025-11-14",
+    "category": "Backend Development",
+    "job_count": 3,
+    "rolling_7d": 3.0,
+    "rolling_30d": 3.0
+  },
+  {
+    "date": "2025-11-14",
+    "category": "Full Stack Development",
+    "job_count": 1,
+    "rolling_7d": 1.5,
+    "rolling_30d": 1.5
+  },
+  {
+    "date": "2025-11-14",
+    "category": "Machine Learning & AI",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-11-14",
+    "category": "Product Management",
+    "job_count": 2,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-11-16",
     "category": "QA & Testing",
     "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
+    "rolling_7d": 1.3333333333333333,
+    "rolling_30d": 1.3333333333333333
   },
   {
     "date": "2025-11-16",
-    "category": "DevOps & Infrastructure",
+    "category": "Security & Compliance",
+    "job_count": 1,
+    "rolling_7d": 1.5,
+    "rolling_30d": 1.5
+  },
+  {
+    "date": "2025-11-17",
+    "category": "Machine Learning & AI",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
   },
   {
-    "date": "2025-11-16",
+    "date": "2025-11-17",
     "category": "Product Management",
     "job_count": 1,
     "rolling_7d": 1.5,
@@ -92,6 +120,13 @@
   },
   {
     "date": "2025-11-17",
+    "category": "QA & Testing",
+    "job_count": 1,
+    "rolling_7d": 1.25,
+    "rolling_30d": 1.25
+  },
+  {
+    "date": "2025-11-18",
     "category": "DevOps & Infrastructure",
     "job_count": 1,
     "rolling_7d": 1.0,
@@ -99,10 +134,17 @@
   },
   {
     "date": "2025-11-18",
-    "category": "Backend Development",
+    "category": "Frontend Development",
     "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
+    "rolling_7d": 1.3333333333333333,
+    "rolling_30d": 1.3333333333333333
+  },
+  {
+    "date": "2025-11-18",
+    "category": "Mobile Development",
+    "job_count": 2,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
   },
   {
     "date": "2025-11-18",
@@ -113,6 +155,13 @@
   },
   {
     "date": "2025-11-19",
+    "category": "Backend Development",
+    "job_count": 1,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-11-19",
     "category": "DevOps & Infrastructure",
     "job_count": 1,
     "rolling_7d": 1.0,
@@ -120,24 +169,38 @@
   },
   {
     "date": "2025-11-19",
-    "category": "Machine Learning & AI",
-    "job_count": 1,
-    "rolling_7d": 1.5,
-    "rolling_30d": 1.5
-  },
-  {
-    "date": "2025-11-19",
-    "category": "Security & Compliance",
+    "category": "Frontend Development",
     "job_count": 1,
     "rolling_7d": 1.25,
     "rolling_30d": 1.25
   },
   {
     "date": "2025-11-19",
+    "category": "Full Stack Development",
+    "job_count": 1,
+    "rolling_7d": 1.3333333333333333,
+    "rolling_30d": 1.3333333333333333
+  },
+  {
+    "date": "2025-11-19",
+    "category": "Product Management",
+    "job_count": 1,
+    "rolling_7d": 1.3333333333333333,
+    "rolling_30d": 1.3333333333333333
+  },
+  {
+    "date": "2025-11-19",
+    "category": "QA & Testing",
+    "job_count": 3,
+    "rolling_7d": 1.6,
+    "rolling_30d": 1.6
+  },
+  {
+    "date": "2025-11-19",
     "category": "Software Engineering",
-    "job_count": 2,
-    "rolling_7d": 2.0,
-    "rolling_30d": 2.0
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
   },
   {
     "date": "2025-11-20",
@@ -147,6 +210,41 @@
     "rolling_30d": 1.0
   },
   {
+    "date": "2025-11-20",
+    "category": "Machine Learning & AI",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-11-20",
+    "category": "Mobile Development",
+    "job_count": 1,
+    "rolling_7d": 1.5,
+    "rolling_30d": 1.5
+  },
+  {
+    "date": "2025-11-20",
+    "category": "QA & Testing",
+    "job_count": 1,
+    "rolling_7d": 1.5,
+    "rolling_30d": 1.5
+  },
+  {
+    "date": "2025-11-20",
+    "category": "Software Engineering",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-11-21",
+    "category": "Cloud & Architecture",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
     "date": "2025-11-21",
     "category": "DevOps & Infrastructure",
     "job_count": 1,
@@ -155,352 +253,653 @@
   },
   {
     "date": "2025-11-21",
-    "category": "Full Stack Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-21",
-    "category": "Security & Compliance",
+    "category": "Frontend Development",
     "job_count": 1,
     "rolling_7d": 1.2,
     "rolling_30d": 1.2
   },
   {
-    "date": "2025-11-24",
-    "category": "DevOps & Infrastructure",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-24",
-    "category": "Full Stack Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-24",
-    "category": "Security & Compliance",
-    "job_count": 1,
-    "rolling_7d": 1.1666666666666667,
-    "rolling_30d": 1.1666666666666667
-  },
-  {
-    "date": "2025-11-25",
-    "category": "Frontend Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-25",
-    "category": "Product Management",
+    "date": "2025-11-21",
+    "category": "Mobile Development",
     "job_count": 1,
     "rolling_7d": 1.3333333333333333,
     "rolling_30d": 1.3333333333333333
   },
   {
-    "date": "2025-11-26",
-    "category": "Software Engineering",
-    "job_count": 1,
-    "rolling_7d": 1.5,
-    "rolling_30d": 1.5
-  },
-  {
-    "date": "2025-11-27",
-    "category": "Full Stack Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-28",
-    "category": "Data Science & Analytics",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-11-30",
-    "category": "DevOps & Infrastructure",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-01",
-    "category": "Machine Learning & AI",
-    "job_count": 2,
-    "rolling_7d": 1.6666666666666667,
-    "rolling_30d": 1.6666666666666667
-  },
-  {
-    "date": "2025-12-02",
-    "category": "Backend Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-02",
-    "category": "DevOps & Infrastructure",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-02",
-    "category": "Frontend Development",
-    "job_count": 2,
-    "rolling_7d": 1.2,
-    "rolling_30d": 1.2
-  },
-  {
-    "date": "2025-12-02",
-    "category": "Machine Learning & AI",
-    "job_count": 1,
-    "rolling_7d": 1.5,
-    "rolling_30d": 1.5
-  },
-  {
-    "date": "2025-12-02",
+    "date": "2025-11-21",
     "category": "Product Management",
-    "job_count": 4,
-    "rolling_7d": 2.0,
-    "rolling_30d": 2.0
+    "job_count": 2,
+    "rolling_7d": 1.5,
+    "rolling_30d": 1.5
   },
   {
-    "date": "2025-12-02",
-    "category": "Security & Compliance",
-    "job_count": 4,
+    "date": "2025-11-21",
+    "category": "QA & Testing",
+    "job_count": 2,
     "rolling_7d": 1.5714285714285714,
     "rolling_30d": 1.5714285714285714
   },
   {
-    "date": "2025-12-03",
-    "category": "Backend Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-03",
-    "category": "Product Management",
-    "job_count": 1,
-    "rolling_7d": 1.8,
-    "rolling_30d": 1.8
-  },
-  {
-    "date": "2025-12-03",
-    "category": "Software Engineering",
-    "job_count": 1,
-    "rolling_7d": 1.3333333333333333,
-    "rolling_30d": 1.3333333333333333
-  },
-  {
-    "date": "2025-12-04",
-    "category": "Backend Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-04",
+    "date": "2025-11-24",
     "category": "Cloud & Architecture",
-    "job_count": 2,
-    "rolling_7d": 1.5,
-    "rolling_30d": 1.5
-  },
-  {
-    "date": "2025-12-04",
-    "category": "Data Science & Analytics",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
   },
   {
-    "date": "2025-12-04",
+    "date": "2025-11-24",
     "category": "DevOps & Infrastructure",
-    "job_count": 3,
-    "rolling_7d": 1.2857142857142858,
-    "rolling_30d": 1.2
-  },
-  {
-    "date": "2025-12-04",
-    "category": "Full Stack Development",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
   },
   {
-    "date": "2025-12-04",
-    "category": "Security & Compliance",
-    "job_count": 1,
-    "rolling_7d": 1.5714285714285714,
-    "rolling_30d": 1.5
-  },
-  {
-    "date": "2025-12-05",
-    "category": "Cloud & Architecture",
-    "job_count": 2,
-    "rolling_7d": 1.6666666666666667,
-    "rolling_30d": 1.6666666666666667
-  },
-  {
-    "date": "2025-12-05",
-    "category": "Data Science & Analytics",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-05",
-    "category": "DevOps & Infrastructure",
-    "job_count": 2,
-    "rolling_7d": 1.4285714285714286,
-    "rolling_30d": 1.2727272727272727
-  },
-  {
-    "date": "2025-12-05",
+    "date": "2025-11-24",
     "category": "Frontend Development",
     "job_count": 1,
     "rolling_7d": 1.1666666666666667,
     "rolling_30d": 1.1666666666666667
   },
   {
-    "date": "2025-12-05",
+    "date": "2025-11-24",
+    "category": "QA & Testing",
+    "job_count": 2,
+    "rolling_7d": 1.5714285714285714,
+    "rolling_30d": 1.625
+  },
+  {
+    "date": "2025-11-25",
+    "category": "Backend Development",
+    "job_count": 2,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-11-25",
     "category": "Machine Learning & AI",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-11-25",
+    "category": "Product Management",
     "job_count": 1,
     "rolling_7d": 1.4,
     "rolling_30d": 1.4
   },
   {
-    "date": "2025-12-05",
-    "category": "Mobile Development",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-05",
-    "category": "QA & Testing",
-    "job_count": 1,
-    "rolling_7d": 1.0,
-    "rolling_30d": 1.0
-  },
-  {
-    "date": "2025-12-05",
+    "date": "2025-11-25",
     "category": "Security & Compliance",
     "job_count": 1,
-    "rolling_7d": 1.4285714285714286,
-    "rolling_30d": 1.4444444444444444
+    "rolling_7d": 1.25,
+    "rolling_30d": 1.25
   },
   {
-    "date": "2025-12-05",
+    "date": "2025-11-26",
+    "category": "Cloud & Architecture",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-11-26",
+    "category": "Mobile Development",
+    "job_count": 1,
+    "rolling_7d": 1.25,
+    "rolling_30d": 1.25
+  },
+  {
+    "date": "2025-11-26",
+    "category": "Product Management",
+    "job_count": 2,
+    "rolling_7d": 1.5,
+    "rolling_30d": 1.5
+  },
+  {
+    "date": "2025-11-26",
+    "category": "QA & Testing",
+    "job_count": 1,
+    "rolling_7d": 1.5714285714285714,
+    "rolling_30d": 1.5555555555555556
+  },
+  {
+    "date": "2025-11-26",
+    "category": "Software Engineering",
+    "job_count": 2,
+    "rolling_7d": 1.3333333333333333,
+    "rolling_30d": 1.3333333333333333
+  },
+  {
+    "date": "2025-11-27",
+    "category": "QA & Testing",
+    "job_count": 1,
+    "rolling_7d": 1.5714285714285714,
+    "rolling_30d": 1.5
+  },
+  {
+    "date": "2025-11-28",
+    "category": "QA & Testing",
+    "job_count": 1,
+    "rolling_7d": 1.5714285714285714,
+    "rolling_30d": 1.4545454545454546
+  },
+  {
+    "date": "2025-11-30",
+    "category": "QA & Testing",
+    "job_count": 1,
+    "rolling_7d": 1.2857142857142858,
+    "rolling_30d": 1.4166666666666667
+  },
+  {
+    "date": "2025-12-01",
+    "category": "Backend Development",
+    "job_count": 4,
+    "rolling_7d": 2.5,
+    "rolling_30d": 2.5
+  },
+  {
+    "date": "2025-12-01",
+    "category": "Full Stack Development",
+    "job_count": 1,
+    "rolling_7d": 1.25,
+    "rolling_30d": 1.25
+  },
+  {
+    "date": "2025-12-01",
+    "category": "Mobile Development",
+    "job_count": 5,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Backend Development",
+    "job_count": 4,
+    "rolling_7d": 2.8,
+    "rolling_30d": 2.8
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Cloud & Architecture",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-12-02",
+    "category": "DevOps & Infrastructure",
+    "job_count": 3,
+    "rolling_7d": 1.3333333333333333,
+    "rolling_30d": 1.3333333333333333
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Frontend Development",
+    "job_count": 3,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.4285714285714286
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Full Stack Development",
+    "job_count": 1,
+    "rolling_7d": 1.2,
+    "rolling_30d": 1.2
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Machine Learning & AI",
+    "job_count": 2,
+    "rolling_7d": 1.1428571428571428,
+    "rolling_30d": 1.125
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Mobile Development",
+    "job_count": 3,
+    "rolling_7d": 2.1666666666666665,
+    "rolling_30d": 2.1666666666666665
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Product Management",
+    "job_count": 3,
+    "rolling_7d": 1.7142857142857142,
+    "rolling_30d": 1.7142857142857142
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Security & Compliance",
+    "job_count": 6,
+    "rolling_7d": 2.2,
+    "rolling_30d": 2.2
+  },
+  {
+    "date": "2025-12-02",
     "category": "Software Engineering",
     "job_count": 1,
     "rolling_7d": 1.25,
     "rolling_30d": 1.25
   },
   {
-    "date": "2025-12-06",
-    "category": "Backend Development",
+    "date": "2025-12-03",
+    "category": "Cloud & Architecture",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
   },
   {
-    "date": "2025-12-06",
+    "date": "2025-12-03",
     "category": "DevOps & Infrastructure",
     "job_count": 1,
+    "rolling_7d": 1.2857142857142858,
+    "rolling_30d": 1.2857142857142858
+  },
+  {
+    "date": "2025-12-03",
+    "category": "Frontend Development",
+    "job_count": 1,
     "rolling_7d": 1.4285714285714286,
-    "rolling_30d": 1.25
+    "rolling_30d": 1.375
   },
   {
-    "date": "2025-12-06",
-    "category": "Mobile Development",
-    "job_count": 8,
-    "rolling_7d": 4.5,
-    "rolling_30d": 4.5
-  },
-  {
-    "date": "2025-12-07",
-    "category": "Cloud & Architecture",
+    "date": "2025-12-03",
+    "category": "Full Stack Development",
     "job_count": 2,
-    "rolling_7d": 1.75,
+    "rolling_7d": 1.3333333333333333,
+    "rolling_30d": 1.3333333333333333
+  },
+  {
+    "date": "2025-12-03",
+    "category": "Machine Learning & AI",
+    "job_count": 3,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.3333333333333333
+  },
+  {
+    "date": "2025-12-03",
+    "category": "Mobile Development",
+    "job_count": 2,
+    "rolling_7d": 2.142857142857143,
+    "rolling_30d": 2.142857142857143
+  },
+  {
+    "date": "2025-12-03",
+    "category": "Product Management",
+    "job_count": 2,
+    "rolling_7d": 1.7142857142857142,
     "rolling_30d": 1.75
   },
   {
-    "date": "2025-12-07",
-    "category": "Product Management",
+    "date": "2025-12-03",
+    "category": "Security & Compliance",
     "job_count": 2,
-    "rolling_7d": 1.8333333333333333,
-    "rolling_30d": 1.8333333333333333
+    "rolling_7d": 2.1666666666666665,
+    "rolling_30d": 2.1666666666666665
+  },
+  {
+    "date": "2025-12-03",
+    "category": "Software Engineering",
+    "job_count": 3,
+    "rolling_7d": 1.6,
+    "rolling_30d": 1.6
+  },
+  {
+    "date": "2025-12-04",
+    "category": "Backend Development",
+    "job_count": 3,
+    "rolling_7d": 2.8333333333333335,
+    "rolling_30d": 2.8333333333333335
+  },
+  {
+    "date": "2025-12-04",
+    "category": "Data Science & Analytics",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-12-04",
+    "category": "DevOps & Infrastructure",
+    "job_count": 2,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.375
+  },
+  {
+    "date": "2025-12-04",
+    "category": "Frontend Development",
+    "job_count": 2,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.4444444444444444
+  },
+  {
+    "date": "2025-12-04",
+    "category": "Full Stack Development",
+    "job_count": 3,
+    "rolling_7d": 1.5714285714285714,
+    "rolling_30d": 1.5714285714285714
+  },
+  {
+    "date": "2025-12-04",
+    "category": "Mobile Development",
+    "job_count": 2,
+    "rolling_7d": 2.142857142857143,
+    "rolling_30d": 2.125
+  },
+  {
+    "date": "2025-12-04",
+    "category": "QA & Testing",
+    "job_count": 6,
+    "rolling_7d": 2.0,
+    "rolling_30d": 1.7692307692307692
+  },
+  {
+    "date": "2025-12-04",
+    "category": "Software Engineering",
+    "job_count": 4,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Backend Development",
+    "job_count": 1,
+    "rolling_7d": 2.5714285714285716,
+    "rolling_30d": 2.5714285714285716
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Data Science & Analytics",
+    "job_count": 1,
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Full Stack Development",
+    "job_count": 2,
+    "rolling_7d": 1.5714285714285714,
+    "rolling_30d": 1.625
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Machine Learning & AI",
+    "job_count": 1,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.3
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Product Management",
+    "job_count": 3,
+    "rolling_7d": 2.0,
+    "rolling_30d": 1.8888888888888888
+  },
+  {
+    "date": "2025-12-05",
+    "category": "QA & Testing",
+    "job_count": 5,
+    "rolling_7d": 2.4285714285714284,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Security & Compliance",
+    "job_count": 1,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Software Engineering",
+    "job_count": 2,
+    "rolling_7d": 2.0,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-12-06",
+    "category": "Data Science & Analytics",
+    "job_count": 8,
+    "rolling_7d": 3.3333333333333335,
+    "rolling_30d": 3.3333333333333335
+  },
+  {
+    "date": "2025-12-06",
+    "category": "QA & Testing",
+    "job_count": 1,
+    "rolling_7d": 2.2857142857142856,
+    "rolling_30d": 1.9333333333333333
+  },
+  {
+    "date": "2025-12-06",
+    "category": "Security & Compliance",
+    "job_count": 1,
+    "rolling_7d": 1.8571428571428572,
+    "rolling_30d": 1.875
   },
   {
     "date": "2025-12-07",
-    "category": "Security & Compliance",
+    "category": "Frontend Development",
     "job_count": 3,
     "rolling_7d": 1.7142857142857142,
     "rolling_30d": 1.6
   },
   {
     "date": "2025-12-07",
-    "category": "Software Engineering",
+    "category": "QA & Testing",
+    "job_count": 4,
+    "rolling_7d": 2.7142857142857144,
+    "rolling_30d": 2.0625
+  },
+  {
+    "date": "2025-12-07",
+    "category": "Security & Compliance",
     "job_count": 2,
-    "rolling_7d": 1.4,
-    "rolling_30d": 1.4
+    "rolling_7d": 2.0,
+    "rolling_30d": 1.8888888888888888
   },
   {
     "date": "2025-12-08",
-    "category": "Data Science & Analytics",
+    "category": "Backend Development",
     "job_count": 2,
-    "rolling_7d": 1.25,
-    "rolling_30d": 1.25
+    "rolling_7d": 2.4285714285714284,
+    "rolling_30d": 2.5
   },
   {
     "date": "2025-12-08",
     "category": "DevOps & Infrastructure",
     "job_count": 1,
     "rolling_7d": 1.4285714285714286,
-    "rolling_30d": 1.2307692307692308
+    "rolling_30d": 1.3333333333333333
   },
   {
     "date": "2025-12-08",
     "category": "Machine Learning & AI",
     "job_count": 1,
-    "rolling_7d": 1.3333333333333333,
-    "rolling_30d": 1.3333333333333333
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.2727272727272727
+  },
+  {
+    "date": "2025-12-08",
+    "category": "Mobile Development",
+    "job_count": 5,
+    "rolling_7d": 2.7142857142857144,
+    "rolling_30d": 2.4444444444444446
   },
   {
     "date": "2025-12-08",
     "category": "Product Management",
     "job_count": 1,
-    "rolling_7d": 1.7142857142857142,
-    "rolling_30d": 1.7142857142857142
+    "rolling_7d": 2.0,
+    "rolling_30d": 1.8
+  },
+  {
+    "date": "2025-12-08",
+    "category": "QA & Testing",
+    "job_count": 4,
+    "rolling_7d": 3.142857142857143,
+    "rolling_30d": 2.176470588235294
+  },
+  {
+    "date": "2025-12-08",
+    "category": "Security & Compliance",
+    "job_count": 1,
+    "rolling_7d": 2.0,
+    "rolling_30d": 1.8
   },
   {
     "date": "2025-12-08",
     "category": "Software Engineering",
+    "job_count": 2,
+    "rolling_7d": 2.142857142857143,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Backend Development",
+    "job_count": 4,
+    "rolling_7d": 2.857142857142857,
+    "rolling_30d": 2.6666666666666665
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Cloud & Architecture",
     "job_count": 1,
-    "rolling_7d": 1.3333333333333333,
-    "rolling_30d": 1.3333333333333333
+    "rolling_7d": 1.0,
+    "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-12-09",
+    "category": "DevOps & Infrastructure",
+    "job_count": 1,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.3
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Full Stack Development",
+    "job_count": 2,
+    "rolling_7d": 1.7142857142857142,
+    "rolling_30d": 1.6666666666666667
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Mobile Development",
+    "job_count": 6,
+    "rolling_7d": 3.4285714285714284,
+    "rolling_30d": 2.8
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Product Management",
+    "job_count": 1,
+    "rolling_7d": 1.8571428571428572,
+    "rolling_30d": 1.7272727272727273
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Software Engineering",
+    "job_count": 6,
+    "rolling_7d": 2.857142857142857,
+    "rolling_30d": 2.4444444444444446
+  },
+  {
+    "date": "2025-12-10",
+    "category": "Backend Development",
+    "job_count": 1,
+    "rolling_7d": 2.7142857142857144,
+    "rolling_30d": 2.5
+  },
+  {
+    "date": "2025-12-10",
+    "category": "DevOps & Infrastructure",
+    "job_count": 1,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.2727272727272727
   },
   {
     "date": "2025-12-10",
     "category": "Frontend Development",
     "job_count": 1,
-    "rolling_7d": 1.1428571428571428,
-    "rolling_30d": 1.1428571428571428
+    "rolling_7d": 1.7142857142857142,
+    "rolling_30d": 1.5454545454545454
   },
   {
     "date": "2025-12-10",
-    "category": "QA & Testing",
+    "category": "Machine Learning & AI",
+    "job_count": 3,
+    "rolling_7d": 1.7142857142857142,
+    "rolling_30d": 1.4166666666666667
+  },
+  {
+    "date": "2025-12-10",
+    "category": "Mobile Development",
+    "job_count": 2,
+    "rolling_7d": 3.5714285714285716,
+    "rolling_30d": 2.727272727272727
+  },
+  {
+    "date": "2025-12-10",
+    "category": "Product Management",
+    "job_count": 4,
+    "rolling_7d": 2.2857142857142856,
+    "rolling_30d": 1.9166666666666667
+  },
+  {
+    "date": "2025-12-10",
+    "category": "Software Engineering",
+    "job_count": 4,
+    "rolling_7d": 3.142857142857143,
+    "rolling_30d": 2.6
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Backend Development",
+    "job_count": 4,
+    "rolling_7d": 2.7142857142857144,
+    "rolling_30d": 2.6363636363636362
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Cloud & Architecture",
     "job_count": 1,
     "rolling_7d": 1.0,
     "rolling_30d": 1.0
+  },
+  {
+    "date": "2025-12-11",
+    "category": "DevOps & Infrastructure",
+    "job_count": 1,
+    "rolling_7d": 1.4285714285714286,
+    "rolling_30d": 1.25
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Machine Learning & AI",
+    "job_count": 1,
+    "rolling_7d": 1.7142857142857142,
+    "rolling_30d": 1.3846153846153846
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Mobile Development",
+    "job_count": 4,
+    "rolling_7d": 3.4285714285714284,
+    "rolling_30d": 2.8333333333333335
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Product Management",
+    "job_count": 3,
+    "rolling_7d": 2.4285714285714284,
+    "rolling_30d": 2.0
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Software Engineering",
+    "job_count": 7,
+    "rolling_7d": 4.0,
+    "rolling_30d": 3.0
   }
 ]

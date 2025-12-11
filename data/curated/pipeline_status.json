@@ -1,52 +1,52 @@
 {
-  "start_time": "2025-12-10T18:14:35.532287",
+  "start_time": "2025-12-11T16:00:48.169099",
   "stages": {
     "fetch": {
       "success": true,
-      "duration": 24.79257106781006,
-      "jobs_fetched": 21
+      "duration": 52.19185423851013,
+      "jobs_fetched": 193
     },
     "clean": {
       "success": true,
-      "duration": 0.8963761329650879,
-      "jobs_cleaned": 165
+      "duration": 1.1244621276855469,
+      "jobs_cleaned": 322
     },
     "skills": {
       "success": true,
-      "duration": 168.82133293151855,
-      "jobs_processed": 165
+      "duration": 361.1353180408478,
+      "jobs_processed": 322
     },
     "clusters": {
       "success": true,
-      "duration": 12.593523979187012,
+      "duration": 25.0279061794281,
       "categories": 12
     },
     "aggregate": {
       "success": true,
-      "duration": 0.14835500717163086
+      "duration": 0.18997406959533691
     },
     "forecast": {
       "success": true,
-      "duration": 1.3951940536499023,
+      "duration": 2.740203857421875,
       "forecast_days": 30
     },
     "alerts": {
       "success": true,
-      "duration": 0.018043041229248047,
-      "alerts_generated": 12
+      "duration": 0.02266073226928711,
+      "alerts_generated": 17
     },
     "jmmi": {
       "success": true,
-      "duration": 0.016494274139404297,
-      "jmmi_score": 75.1
+      "duration": 0.01593613624572754,
+      "jmmi_score": 61.2
     },
     "export": {
       "success": true,
-      "duration": 0.0318758487701416,
+      "duration": 0.05605292320251465,
       "files_created": 6
     }
   },
   "success": true,
   "error": null,
-  "total_duration": 208.72394394874573
+  "total_duration": 442.5118200778961
 }

@@ -79,39 +79,83 @@ def fetch_from_all_sources(
         results['failed_sources'] += 1
         logger.error(f"JSearch exception: {str(e)}")
 
-    # Source 2: USAJobs API
+    # Source 2: USAJobs API (search multiple keywords)
     try:
         logger.info("=" * 60)
         logger.info("Fetching from USAJobs API...")
         logger.info("=" * 60)
 
         from etl.fetch_usajobs import fetch_usajobs
-        usajobs_result = fetch_usajobs(
-            keyword=query,
-            num_pages=usajobs_pages,
-            results_per_page=25,
-            posted_within_days=30
-        )
 
-        if usajobs_result['success']:
+        # Define AI/tech job keywords to search
+        usajobs_keywords = [
+            "software engineer",
+            "data scientist",
+            "machine learning",
+            "artificial intelligence",
+            "data engineer",
+            "cloud engineer",
+            "DevOps engineer",
+            "cybersecurity",
+            "full stack developer",
+            "software developer"
+        ]
+
+        usajobs_dataframes = []
+        usajobs_total = 0
+        usajobs_errors = []
+
+        for keyword in usajobs_keywords:
+            logger.info(f"Searching USAJobs for: '{keyword}'...")
+
+            usajobs_result = fetch_usajobs(
+                keyword=keyword,
+                num_pages=usajobs_pages,
+                results_per_page=25,
+                posted_within_days=30
+            )
+
+            if usajobs_result['success']:
+                usajobs_total += usajobs_result['count']
+                df = pd.read_parquet(usajobs_result['output_file'])
+                usajobs_dataframes.append(df)
+                logger.info(f"  ✓ Found {usajobs_result['count']} jobs for '{keyword}'")
+            else:
+                usajobs_errors.append(f"{keyword}: {usajobs_result.get('error')}")
+                logger.warning(f"  ✗ Failed for '{keyword}': {usajobs_result.get('error')}")
+
+        # Combine all USAJobs results and remove duplicates
+        if usajobs_dataframes:
+            usajobs_combined = pd.concat(usajobs_dataframes, ignore_index=True)
+            initial_usajobs = len(usajobs_combined)
+            usajobs_combined = usajobs_combined.drop_duplicates(subset=['job_id'], keep='first')
+            usajobs_unique = len(usajobs_combined)
+
+            logger.info(f"USAJobs: Fetched {initial_usajobs} total, {usajobs_unique} unique jobs")
+
+            # Save combined USAJobs data
+            output_dir = Path('data/raw')
+            today = datetime.now().strftime('%Y-%m-%d')
+            usajobs_file = output_dir / f'jobs_usajobs_{today}.parquet'
+            usajobs_combined.to_parquet(usajobs_file, index=False, engine='pyarrow')
+
             results['sources']['usajobs'] = {
                 'success': True,
-                'count': usajobs_result['count'],
-                'file': usajobs_result.get('output_file')
+                'count': usajobs_unique,
+                'file': str(usajobs_file),
+                'keywords_searched': len(usajobs_keywords),
+                'keywords_successful': len(usajobs_dataframes)
             }
             results['successful_sources'] += 1
-            results['total_jobs'] += usajobs_result['count']
-
-            # Load the dataframe
-            df = pd.read_parquet(usajobs_result['output_file'])
-            all_dataframes.append(df)
+            results['total_jobs'] += usajobs_unique
+            all_dataframes.append(usajobs_combined)
         else:
             results['sources']['usajobs'] = {
                 'success': False,
-                'error': usajobs_result.get('error')
+                'error': f"All keywords failed: {', '.join(usajobs_errors[:3])}"
             }
             results['failed_sources'] += 1
-            logger.warning(f"USAJobs failed: {usajobs_result.get('error')}")
+            logger.warning("USAJobs: All keyword searches failed")
 
     except Exception as e:
         results['sources']['usajobs'] = {'success': False, 'error': str(e)}

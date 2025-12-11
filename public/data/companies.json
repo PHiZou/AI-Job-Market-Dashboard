@@ -1,11 +1,35 @@
 [
   {
+    "company_name": "Veterans Health Administration",
+    "job_count": 44,
+    "avg_salary_min": 80564.75,
+    "avg_salary_max": 120672.81818181818,
+    "primary_location": "Bay Pines, Florida, United States",
+    "primary_category": "Product Management"
+  },
+  {
+    "company_name": "Naval Sea Systems Command",
+    "job_count": 11,
+    "avg_salary_min": 106516.18181818182,
+    "avg_salary_max": 168513.0909090909,
+    "primary_location": "Dahlgren, Virginia, United States",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Air National Guard Units",
+    "job_count": 10,
+    "avg_salary_min": 75043.6,
+    "avg_salary_max": 97556.9,
+    "primary_location": "Brunswick, Georgia, United States",
+    "primary_category": "Full Stack Development"
+  },
+  {
     "company_name": "Capital One",
     "job_count": 10,
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "McLean, Virginia, US",
-    "primary_category": "Product Management"
+    "primary_category": "Security & Compliance"
   },
   {
     "company_name": "Walmart",
@@ -13,6 +37,38 @@
     "avg_salary_min": 110666.66666666667,
     "avg_salary_max": 221333.33333333334,
     "primary_location": "Waldorf, Maryland, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "Defense Information Systems Agency",
+    "job_count": 8,
+    "avg_salary_min": 143072.625,
+    "avg_salary_max": 183380.125,
+    "primary_location": "Fort Meade, Maryland, United States",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "Air Force Materiel Command",
+    "job_count": 7,
+    "avg_salary_min": 90061.0,
+    "avg_salary_max": 138927.42857142858,
+    "primary_location": "Eglin AFB, Florida, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Army National Guard Units",
+    "job_count": 6,
+    "avg_salary_min": 60916.5,
+    "avg_salary_max": 79195.16666666667,
+    "primary_location": "Boone, Iowa, United States",
+    "primary_category": "Full Stack Development"
+  },
+  {
+    "company_name": "Department of Energy - Agency Wide",
+    "job_count": 5,
+    "avg_salary_min": 115946.6,
+    "avg_salary_max": 153174.6,
+    "primary_location": "Albany, Oregon, United States",
     "primary_category": "Mobile Development"
   },
   {
@@ -21,15 +77,39 @@
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "Chantilly, Virginia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "U.S. Army Corps of Engineers",
+    "job_count": 5,
+    "avg_salary_min": 118471.2,
+    "avg_salary_max": 163878.4,
+    "primary_location": "Edinburg, Texas, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Defense Finance and Accounting Service",
+    "job_count": 4,
+    "avg_salary_min": 93964.5,
+    "avg_salary_max": 131184.75,
+    "primary_location": "Indianapolis, Indiana, United States",
     "primary_category": "Software Engineering"
   },
   {
-    "company_name": "Naval Sea Systems Command",
+    "company_name": "U.S. Coast Guard",
     "job_count": 4,
-    "avg_salary_min": 90666.0,
-    "avg_salary_max": 152325.25,
-    "primary_location": "Dahlgren, Virginia, United States",
-    "primary_category": "Frontend Development"
+    "avg_salary_min": 116168.0,
+    "avg_salary_max": 151021.5,
+    "primary_location": "Alexandria, Virginia, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Air Force Civilian Career Training",
+    "job_count": 3,
+    "avg_salary_min": 55820.666666666664,
+    "avg_salary_max": 85625.33333333333,
+    "primary_location": "Elmendorf AFB, Alaska, United States",
+    "primary_category": "Backend Development"
   },
   {
     "company_name": "Peraton",
@@ -37,22 +117,78 @@
     "avg_salary_min": 138333.33333333334,
     "avg_salary_max": 221333.33333333334,
     "primary_location": "Herndon, Virginia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Department of the Air Force - Agency Wide",
+    "job_count": 3,
+    "avg_salary_min": 136384.0,
+    "avg_salary_max": 179238.0,
+    "primary_location": "Wright-Patterson AFB, Ohio, United States",
     "primary_category": "Software Engineering"
   },
   {
-    "company_name": "Veterans Health Administration",
+    "company_name": "Commander, Navy Installations",
     "job_count": 3,
-    "avg_salary_min": 44403.333333333336,
-    "avg_salary_max": 105818.0,
-    "primary_location": "Hot Springs, South Dakota, United States",
-    "primary_category": "QA & Testing"
+    "avg_salary_min": 93799.0,
+    "avg_salary_max": 118719.0,
+    "primary_location": "Millington, Tennessee, United States",
+    "primary_category": "Mobile Development"
   },
   {
-    "company_name": "Air Force Materiel Command",
-    "job_count": 3,
-    "avg_salary_min": 84316.0,
-    "avg_salary_max": 130344.66666666667,
-    "primary_location": "Eglin AFB, Florida, United States",
+    "company_name": "Defense Intelligence Agency",
+    "job_count": 2,
+    "avg_salary_min": 52921.0,
+    "avg_salary_max": 95883.5,
+    "primary_location": "Washington, District of Columbia, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Defense Logistics Agency",
+    "job_count": 2,
+    "avg_salary_min": 105383.0,
+    "avg_salary_max": 146877.5,
+    "primary_location": "Battle Creek, Michigan, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Oracle",
+    "job_count": 2,
+    "avg_salary_min": 79800.0,
+    "avg_salary_max": 178000.0,
+    "primary_location": "Reston, Virginia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Naval Facilities Engineering Systems Command",
+    "job_count": 2,
+    "avg_salary_min": 137520.0,
+    "avg_salary_max": 178775.0,
+    "primary_location": "Naval Facilities Engineering Command, Atlantic, Virginia, United States",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Pacific Air Forces",
+    "job_count": 2,
+    "avg_salary_min": 63168.5,
+    "avg_salary_max": 82114.5,
+    "primary_location": "Hickam AFB, Hawaii, United States",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "Patent and Trademark Office",
+    "job_count": 2,
+    "avg_salary_min": 146482.5,
+    "avg_salary_max": 167837.5,
+    "primary_location": "Alexandria, Virginia, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Federal Aviation Administration",
+    "job_count": 2,
+    "avg_salary_min": 86557.5,
+    "avg_salary_max": 161361.0,
+    "primary_location": "Herndon, Virginia, United States",
     "primary_category": "Machine Learning & AI"
   },
   {
@@ -61,47 +197,15 @@
     "avg_salary_min": 135506.0,
     "avg_salary_max": 195200.0,
     "primary_location": "San Francisco, California, United States",
-    "primary_category": "Cloud & Architecture"
+    "primary_category": "QA & Testing"
   },
   {
-    "company_name": "Oracle",
+    "company_name": "Securities and Exchange Commission",
     "job_count": 2,
-    "avg_salary_min": 79800.0,
-    "avg_salary_max": 178000.0,
-    "primary_location": "Reston, Virginia, US",
-    "primary_category": "Backend Development"
-  },
-  {
-    "company_name": "Jobs via Dice",
-    "job_count": 2,
-    "avg_salary_min": 85150.0,
-    "avg_salary_max": 153925.0,
-    "primary_location": "Annapolis, Maryland, US",
-    "primary_category": "Software Engineering"
-  },
-  {
-    "company_name": "Booz Allen Hamilton",
-    "job_count": 2,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Fort Belvoir, Virginia, US",
-    "primary_category": "Backend Development"
-  },
-  {
-    "company_name": "Microsoft",
-    "job_count": 2,
-    "avg_salary_min": 110500.0,
-    "avg_salary_max": 236500.0,
-    "primary_location": "Reston, Virginia, US",
-    "primary_category": "Security & Compliance"
-  },
-  {
-    "company_name": "Air Force Civilian Career Training",
-    "job_count": 2,
-    "avg_salary_min": 55486.0,
-    "avg_salary_max": 83525.0,
-    "primary_location": "Seymour Johnson AFB, North Carolina, United States",
-    "primary_category": "Machine Learning & AI"
+    "avg_salary_min": 0.0,
+    "avg_salary_max": 0.0,
+    "primary_location": "Los Angeles, California, United States",
+    "primary_category": "Mobile Development"
   },
   {
     "company_name": "Freddie Mac",
@@ -109,23 +213,127 @@
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "McLean, Virginia, US",
-    "primary_category": "Product Management"
+    "primary_category": "Frontend Development"
   },
   {
-    "company_name": "Nerd Up Staffing",
-    "job_count": 1,
-    "avg_salary_min": 75000.0,
-    "avg_salary_max": 85000.0,
-    "primary_location": "McLean, Virginia, US",
-    "primary_category": "Security & Compliance"
+    "company_name": "Government Accountability Office",
+    "job_count": 2,
+    "avg_salary_min": 23.575000000000003,
+    "avg_salary_max": 26.630000000000003,
+    "primary_location": "Washington, District of Columbia, United States",
+    "primary_category": "Mobile Development"
   },
   {
-    "company_name": "Rackner",
-    "job_count": 1,
+    "company_name": "Federal Law Enforcement Training Centers",
+    "job_count": 2,
+    "avg_salary_min": 99235.0,
+    "avg_salary_max": 138551.0,
+    "primary_location": "Glynco, Georgia, United States",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "Office of the Director of National Intelligence",
+    "job_count": 2,
+    "avg_salary_min": 155527.0,
+    "avg_salary_max": 188567.0,
+    "primary_location": "Bethesda, Maryland, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Customs and Border Protection",
+    "job_count": 2,
+    "avg_salary_min": 97259.0,
+    "avg_salary_max": 126435.5,
+    "primary_location": "Salt Lake City, Utah, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Booz Allen Hamilton",
+    "job_count": 2,
     "avg_salary_min": null,
     "avg_salary_max": null,
-    "primary_location": "Falls Church, Virginia, US",
-    "primary_category": "Security & Compliance"
+    "primary_location": "Fort Belvoir, Virginia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Administrative Office of the U.S. Courts",
+    "job_count": 2,
+    "avg_salary_min": 101402.0,
+    "avg_salary_max": 190061.0,
+    "primary_location": "District of Columbia, District of Columbia, United States",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "Air Education and Training Command",
+    "job_count": 2,
+    "avg_salary_min": 44959.0,
+    "avg_salary_max": 58445.0,
+    "primary_location": "Keesler AFB, Mississippi, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Architect of the Capitol",
+    "job_count": 2,
+    "avg_salary_min": 95251.0,
+    "avg_salary_max": 123826.5,
+    "primary_location": "Washington, District of Columbia, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "United States Fleet Forces Command",
+    "job_count": 2,
+    "avg_salary_min": 97196.5,
+    "avg_salary_max": 126354.0,
+    "primary_location": "Kittery, Maine, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Commander, Naval Information Warfare Systems Command (NAVWARSYSCOM)",
+    "job_count": 2,
+    "avg_salary_min": 96877.0,
+    "avg_salary_max": 162755.0,
+    "primary_location": "Pearl City, Hawaii, United States",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "U.S. Postal Service",
+    "job_count": 2,
+    "avg_salary_min": 77390.0,
+    "avg_salary_max": 143390.0,
+    "primary_location": "Richmond, California, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Microsoft",
+    "job_count": 2,
+    "avg_salary_min": 110500.0,
+    "avg_salary_max": 236500.0,
+    "primary_location": "Reston, Virginia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Centers for Medicare & Medicaid Services",
+    "job_count": 2,
+    "avg_salary_min": 122856.0,
+    "avg_salary_max": 159713.5,
+    "primary_location": "Woodlawn, Maryland, United States",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Jobs via Dice",
+    "job_count": 2,
+    "avg_salary_min": 85150.0,
+    "avg_salary_max": 153925.0,
+    "primary_location": "Annapolis, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Nuclear Regulatory Commission",
+    "job_count": 1,
+    "avg_salary_min": 17.65,
+    "avg_salary_max": 40.5,
+    "primary_location": "Atlanta, Georgia, United States",
+    "primary_category": "Mobile Development"
   },
   {
     "company_name": "Northrop Grumman",
@@ -133,7 +341,39 @@
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "Annapolis Junction, Maryland, US",
-    "primary_category": "DevOps & Infrastructure"
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Nerd Up Staffing",
+    "job_count": 1,
+    "avg_salary_min": 75000.0,
+    "avg_salary_max": 85000.0,
+    "primary_location": "McLean, Virginia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Office of the Secretary of Defense",
+    "job_count": 1,
+    "avg_salary_min": 142488.0,
+    "avg_salary_max": 185234.0,
+    "primary_location": "Pentagon, Arlington, Virginia, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Office of the Inspector General, USPS",
+    "job_count": 1,
+    "avg_salary_min": 51654.0,
+    "avg_salary_max": 88577.0,
+    "primary_location": "Denver, Colorado, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Office of Administration",
+    "job_count": 1,
+    "avg_salary_min": 120579.0,
+    "avg_salary_max": 156755.0,
+    "primary_location": "District of Columbia, District of Columbia, United States",
+    "primary_category": "Software Engineering"
   },
   {
     "company_name": "Navstar",
@@ -144,28 +384,20 @@
     "primary_category": "Security & Compliance"
   },
   {
-    "company_name": "Naval Facilities Engineering Systems Command",
-    "job_count": 1,
-    "avg_salary_min": 126382.0,
-    "avg_salary_max": 164296.0,
-    "primary_location": "Naval Facilities Engineering Command, Atlantic, Virginia, United States",
-    "primary_category": "Frontend Development"
-  },
-  {
-    "company_name": "Motion Recruitment",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Arlington, Virginia, US",
-    "primary_category": "Full Stack Development"
-  },
-  {
     "company_name": "Prime Video & Amazon MGM Studios",
     "job_count": 1,
     "avg_salary_min": 129000.0,
     "avg_salary_max": 224000.0,
     "primary_location": "Arlington, Virginia, US",
-    "primary_category": "Security & Compliance"
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Rackner",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Falls Church, Virginia, US",
+    "primary_category": "Frontend Development"
   },
   {
     "company_name": "2-CM Technologies,",
@@ -173,7 +405,7 @@
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "Jessup, Maryland, US",
-    "primary_category": "Full Stack Development"
+    "primary_category": "QA & Testing"
   },
   {
     "company_name": "RealmOne",
@@ -181,7 +413,7 @@
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "Baltimore, Maryland, US",
-    "primary_category": "DevOps & Infrastructure"
+    "primary_category": "QA & Testing"
   },
   {
     "company_name": "Red Cedar Consultancy",
@@ -189,7 +421,111 @@
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "McLean, Virginia, US",
-    "primary_category": "Security & Compliance"
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Year Up United",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Middletown, Delaware, US",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Verite Group,",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Dulles, Virginia, US",
+    "primary_category": "Data Science & Analytics"
+  },
+  {
+    "company_name": "US General Services Administration",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "U.S. Special Operations Command (Army)",
+    "job_count": 1,
+    "avg_salary_min": 77210.0,
+    "avg_salary_max": 100369.0,
+    "primary_location": "Fort Bragg, North Carolina, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "U.S. Marine Corps",
+    "job_count": 1,
+    "avg_salary_min": 95000.0,
+    "avg_salary_max": 115000.0,
+    "primary_location": "Quantico, Virginia, United States",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "U.S. Army Military Surface Deployment and Distribution Command",
+    "job_count": 1,
+    "avg_salary_min": 108057.0,
+    "avg_salary_max": 140476.0,
+    "primary_location": "Scott AFB, Illinois, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Treasury, Departmental Offices",
+    "job_count": 1,
+    "avg_salary_min": 120579.0,
+    "avg_salary_max": 185234.0,
+    "primary_location": "Washington, District of Columbia, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "The MITRE Corporation",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "McLean, Virginia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Naval Air Systems Command",
+    "job_count": 1,
+    "avg_salary_min": 101401.0,
+    "avg_salary_max": 156755.0,
+    "primary_location": "Patuxent River, Maryland, United States",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Spire",
+    "job_count": 1,
+    "avg_salary_min": 130000.0,
+    "avg_salary_max": 171000.0,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Space Systems Command",
+    "job_count": 1,
+    "avg_salary_min": 94383.0,
+    "avg_salary_max": 145906.0,
+    "primary_location": "Cape Canaveral AFS, Florida, United States",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Smithsonian Institution",
+    "job_count": 1,
+    "avg_salary_min": 142488.0,
+    "avg_salary_max": 195200.0,
+    "primary_location": "Washington, District of Columbia, United States",
+    "primary_category": "Product Management"
+  },
+  {
+    "company_name": "Skyward",
+    "job_count": 1,
+    "avg_salary_min": 125000.0,
+    "avg_salary_max": 150000.0,
+    "primary_location": "Rockville, Maryland, US",
+    "primary_category": "Frontend Development"
   },
   {
     "company_name": "Serco North America",
@@ -197,7 +533,255 @@
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "Alexandria, Virginia, US",
-    "primary_category": "Data Science & Analytics"
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "STRATEGIC SYSTEMS PROGRAMS (SSP)",
+    "job_count": 1,
+    "avg_salary_min": 142488.0,
+    "avg_salary_max": 195200.0,
+    "primary_location": "Washington Navy Yard, District of Columbia, United States",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "TMC TECHNOLOGIES",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "King George, Virginia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Leonardo DRS,",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Frederick, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "National Security Agency/Central Security Service",
+    "job_count": 1,
+    "avg_salary_min": 104219.0,
+    "avg_salary_max": 190848.0,
+    "primary_location": "Fort Meade, Maryland, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Bureau of Naval Personnel",
+    "job_count": 1,
+    "avg_salary_min": 84601.0,
+    "avg_salary_max": 131826.0,
+    "primary_location": "Annapolis, Maryland, United States",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "Defense Security Cooperation Agency",
+    "job_count": 1,
+    "avg_salary_min": 130010.0,
+    "avg_salary_max": 180840.0,
+    "primary_location": "Fort McNair, District of Columbia, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Defense Microelectronics Activity",
+    "job_count": 1,
+    "avg_salary_min": 98236.0,
+    "avg_salary_max": 151863.0,
+    "primary_location": "McClellan, California, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Defense Media Activity",
+    "job_count": 1,
+    "avg_salary_min": 101401.0,
+    "avg_salary_max": 131826.0,
+    "primary_location": "Fort Meade, Maryland, United States",
+    "primary_category": "Product Management"
+  },
+  {
+    "company_name": "Cymertek Corporation",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Tysons, Virginia, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Citizenship and Immigration Services",
+    "job_count": 1,
+    "avg_salary_min": 106382.0,
+    "avg_salary_max": 138296.0,
+    "primary_location": "Camp Springs, Maryland, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Cesna Group",
+    "job_count": 1,
+    "avg_salary_min": 50000.0,
+    "avg_salary_max": 100000.0,
+    "primary_location": "Vienna, Virginia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "CPower",
+    "job_count": 1,
+    "avg_salary_min": 18.0,
+    "avg_salary_max": 22.0,
+    "primary_location": "Baltimore, Maryland, US",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "CACI International",
+    "job_count": 1,
+    "avg_salary_min": 86600.0,
+    "avg_salary_max": 182000.0,
+    "primary_location": "Fort Meade, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Boeing",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Annapolis Junction, Maryland, US",
+    "primary_category": "Security & Compliance"
+  },
+  {
+    "company_name": "National Park Service",
+    "job_count": 1,
+    "avg_salary_min": 20.45,
+    "avg_salary_max": 20.45,
+    "primary_location": "Moab, Utah, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "Black Eagle Defense",
+    "job_count": 1,
+    "avg_salary_min": 119000.0,
+    "avg_salary_max": 176000.0,
+    "primary_location": "Fort Meade, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Belay Technologies",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Laurel, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "BAE Systems",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "AvalonBay Communities",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Arlington, Virginia, US",
+    "primary_category": "Security & Compliance"
+  },
+  {
+    "company_name": "Air Combat Command",
+    "job_count": 1,
+    "avg_salary_min": 90522.0,
+    "avg_salary_max": 117683.0,
+    "primary_location": "Nellis AFB, Nevada, United States",
+    "primary_category": "Software Engineering"
+  },
+  {
+    "company_name": "Advanced Technology and Research Corporation",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Bethesda, Maryland, US",
+    "primary_category": "Machine Learning & AI"
+  },
+  {
+    "company_name": "Ad Hoc",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Washington, District of Columbia, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Accenture Federal Services",
+    "job_count": 1,
+    "avg_salary_min": 84700.0,
+    "avg_salary_max": 149000.0,
+    "primary_location": "Annapolis, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Department of Defense Education Activity",
+    "job_count": 1,
+    "avg_salary_min": 114694.0,
+    "avg_salary_max": 153459.0,
+    "primary_location": "Quantico, Virginia, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Farm Credit Administration",
+    "job_count": 1,
+    "avg_salary_min": 120119.0,
+    "avg_salary_max": 226753.0,
+    "primary_location": "McLean, Virginia, United States",
+    "primary_category": "Frontend Development"
+  },
+  {
+    "company_name": "Fei.com,",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Columbia, Maryland, US",
+    "primary_category": "QA & Testing"
+  },
+  {
+    "company_name": "Ford Motor Company",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Rising Sun, Maryland, US",
+    "primary_category": "Security & Compliance"
+  },
+  {
+    "company_name": "National Nuclear Security Administration",
+    "job_count": 1,
+    "avg_salary_min": 126563.0,
+    "avg_salary_max": 202464.0,
+    "primary_location": "Kansas City, Missouri, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "National Institute of Standards and Technology",
+    "job_count": 1,
+    "avg_salary_min": 120579.0,
+    "avg_salary_max": 195200.0,
+    "primary_location": "San Francisco, California, United States",
+    "primary_category": "Mobile Development"
+  },
+  {
+    "company_name": "National Air and Space Intelligence Center",
+    "job_count": 1,
+    "avg_salary_min": 146807.0,
+    "avg_salary_max": 190848.0,
+    "primary_location": "Wright-Patterson AFB, Ohio, United States",
+    "primary_category": "Backend Development"
+  },
+  {
+    "company_name": "Motion Recruitment",
+    "job_count": 1,
+    "avg_salary_min": null,
+    "avg_salary_max": null,
+    "primary_location": "Arlington, Virginia, US",
+    "primary_category": "QA & Testing"
   },
   {
     "company_name": "Medifast,",
@@ -208,315 +792,11 @@
     "primary_category": "Security & Compliance"
   },
   {
-    "company_name": "Space Systems Command",
-    "job_count": 1,
-    "avg_salary_min": 94383.0,
-    "avg_salary_max": 145906.0,
-    "primary_location": "Cape Canaveral AFS, Florida, United States",
-    "primary_category": "Frontend Development"
-  },
-  {
-    "company_name": "Spire",
-    "job_count": 1,
-    "avg_salary_min": 130000.0,
-    "avg_salary_max": 171000.0,
-    "primary_location": "Washington, District of Columbia, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "TMC TECHNOLOGIES",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "King George, Virginia, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "The MITRE Corporation",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "McLean, Virginia, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "U.S. Army Corps of Engineers",
-    "job_count": 1,
-    "avg_salary_min": 146481.0,
-    "avg_salary_max": 190424.0,
-    "primary_location": "Walla Walla, Washington, United States",
-    "primary_category": "Machine Learning & AI"
-  },
-  {
-    "company_name": "U.S. Coast Guard",
-    "job_count": 1,
-    "avg_salary_min": 120579.0,
-    "avg_salary_max": 156755.0,
-    "primary_location": "Alexandria, Virginia, United States",
-    "primary_category": "Machine Learning & AI"
-  },
-  {
-    "company_name": "US General Services Administration",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Washington, District of Columbia, US",
-    "primary_category": "Cloud & Architecture"
-  },
-  {
-    "company_name": "Verite Group,",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Dulles, Virginia, US",
-    "primary_category": "Full Stack Development"
-  },
-  {
-    "company_name": "Year Up United",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Middletown, Delaware, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "Skyward",
-    "job_count": 1,
-    "avg_salary_min": 125000.0,
-    "avg_salary_max": 150000.0,
-    "primary_location": "Rockville, Maryland, US",
-    "primary_category": "Security & Compliance"
-  },
-  {
-    "company_name": "Leonardo DRS,",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Frederick, Maryland, US",
-    "primary_category": "Data Science & Analytics"
-  },
-  {
     "company_name": "McKinsey & Company",
     "job_count": 1,
     "avg_salary_min": null,
     "avg_salary_max": null,
     "primary_location": "Washington, District of Columbia, US",
-    "primary_category": "Product Management"
-  },
-  {
-    "company_name": "Maritime Administration",
-    "job_count": 1,
-    "avg_salary_min": 84896.0,
-    "avg_salary_max": 146699.0,
-    "primary_location": "Kings Point, New York, United States",
-    "primary_category": "Frontend Development"
-  },
-  {
-    "company_name": "Accenture Federal Services",
-    "job_count": 1,
-    "avg_salary_min": 84700.0,
-    "avg_salary_max": 149000.0,
-    "primary_location": "Annapolis, Maryland, US",
-    "primary_category": "Cloud & Architecture"
-  },
-  {
-    "company_name": "Ad Hoc",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Washington, District of Columbia, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "Advanced Technology and Research Corporation",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Bethesda, Maryland, US",
-    "primary_category": "Frontend Development"
-  },
-  {
-    "company_name": "Air Combat Command",
-    "job_count": 1,
-    "avg_salary_min": 90522.0,
-    "avg_salary_max": 117683.0,
-    "primary_location": "Nellis AFB, Nevada, United States",
-    "primary_category": "Data Science & Analytics"
-  },
-  {
-    "company_name": "AvalonBay Communities",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Arlington, Virginia, US",
-    "primary_category": "Backend Development"
-  },
-  {
-    "company_name": "BAE Systems",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Washington, District of Columbia, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "Belay Technologies",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Laurel, Maryland, US",
-    "primary_category": "Full Stack Development"
-  },
-  {
-    "company_name": "Black Eagle Defense",
-    "job_count": 1,
-    "avg_salary_min": 119000.0,
-    "avg_salary_max": 176000.0,
-    "primary_location": "Fort Meade, Maryland, US",
-    "primary_category": "Software Engineering"
-  },
-  {
-    "company_name": "Boeing",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Annapolis Junction, Maryland, US",
-    "primary_category": "Product Management"
-  },
-  {
-    "company_name": "CACI International",
-    "job_count": 1,
-    "avg_salary_min": 86600.0,
-    "avg_salary_max": 182000.0,
-    "primary_location": "Fort Meade, Maryland, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "CPower",
-    "job_count": 1,
-    "avg_salary_min": 18.0,
-    "avg_salary_max": 22.0,
-    "primary_location": "Baltimore, Maryland, US",
     "primary_category": "Security & Compliance"
-  },
-  {
-    "company_name": "Cesna Group",
-    "job_count": 1,
-    "avg_salary_min": 50000.0,
-    "avg_salary_max": 100000.0,
-    "primary_location": "Vienna, Virginia, US",
-    "primary_category": "Data Science & Analytics"
-  },
-  {
-    "company_name": "Cymertek Corporation",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Tysons, Virginia, US",
-    "primary_category": "Security & Compliance"
-  },
-  {
-    "company_name": "Defense Finance and Accounting Service",
-    "job_count": 1,
-    "avg_salary_min": 106365.0,
-    "avg_salary_max": 143051.0,
-    "primary_location": "Indianapolis, Indiana, United States",
-    "primary_category": "Data Science & Analytics"
-  },
-  {
-    "company_name": "Defense Microelectronics Activity",
-    "job_count": 1,
-    "avg_salary_min": 98236.0,
-    "avg_salary_max": 151863.0,
-    "primary_location": "McClellan, California, United States",
-    "primary_category": "Machine Learning & AI"
-  },
-  {
-    "company_name": "Fei.com,",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Columbia, Maryland, US",
-    "primary_category": "Cloud & Architecture"
-  },
-  {
-    "company_name": "Ford Motor Company",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Rising Sun, Maryland, US",
-    "primary_category": "Backend Development"
-  },
-  {
-    "company_name": "GEICO",
-    "job_count": 1,
-    "avg_salary_min": 100000.0,
-    "avg_salary_max": 215000.0,
-    "primary_location": "Unknown",
-    "primary_category": "Security & Compliance"
-  },
-  {
-    "company_name": "GSA",
-    "job_count": 1,
-    "avg_salary_min": 146481.0,
-    "avg_salary_max": 195200.0,
-    "primary_location": "Washington, District of Columbia, US",
-    "primary_category": "Cloud & Architecture"
-  },
-  {
-    "company_name": "Guidehouse",
-    "job_count": 1,
-    "avg_salary_min": 115000.0,
-    "avg_salary_max": 173000.0,
-    "primary_location": "Fort Meade, Maryland, US",
-    "primary_category": "Security & Compliance"
-  },
-  {
-    "company_name": "KnowHireMatch",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Maryland, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "Knowhirematch",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Washington, District of Columbia, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "Leonardo DRS",
-    "job_count": 1,
-    "avg_salary_min": 130801.0,
-    "avg_salary_max": 203068.0,
-    "primary_location": "Germantown, Maryland, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "AT&T",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Oakton, Virginia, US",
-    "primary_category": "Software Engineering"
-  },
-  {
-    "company_name": "Lockheed Martin",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Manassas, Virginia, US",
-    "primary_category": "DevOps & Infrastructure"
-  },
-  {
-    "company_name": "Zak Systems",
-    "job_count": 1,
-    "avg_salary_min": null,
-    "avg_salary_max": null,
-    "primary_location": "Herndon, Virginia, US",
-    "primary_category": "DevOps & Infrastructure"
   }
 ]
