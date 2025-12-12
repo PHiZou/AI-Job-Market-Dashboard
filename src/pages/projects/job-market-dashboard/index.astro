@@ -3,6 +3,7 @@
 import Dashboard from '../../../components/job-market/Dashboard';
 import InsightsSummary from '../../../components/job-market/InsightsSummary';
 import DarkModeToggle from '../../../components/job-market/DarkModeToggle';
+import '../../../styles/global.css';
 ---
 
 <!DOCTYPE html>
@@ -13,62 +14,64 @@ import DarkModeToggle from '../../../components/job-market/DarkModeToggle';
     <meta name="description" content="AI-Driven Job Market Intelligence Dashboard - Daily-updated NOVA/DC hiring analytics">
     <title>AI Job Market Intelligence Dashboard</title>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-gray-100 transition-colors duration-300">
-    <div class="container mx-auto px-4 py-8 max-w-7xl space-y-8">
-        <!-- Hero Section -->
-        <header class="bg-gradient-to-br from-white to-indigo-50/30 dark:from-gray-800 dark:to-indigo-900/20 rounded-2xl shadow-xl p-8 md:p-12 transition-colors duration-300 border border-indigo-100 dark:border-indigo-900/30">
-            <div class="flex justify-between items-start gap-6">
-                <div class="flex-1">
-                    <div class="mb-2">
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300">
-                            NOVA/DC Job Market Analytics
-                        </span>
-                    </div>
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-                        AI-Driven Job Market Intelligence Dashboard
-                    </h1>
-                    <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-2 leading-relaxed font-medium">
-                        Discover which skills are in demand, which companies are hiring, and where the job market is heading.
-                    </p>
-                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                        Daily-updated NOVA/DC hiring analytics powered by automated ETL, NLP skill extraction, clustering, and time-series forecasting.
-                    </p>
-                    <div class="flex flex-wrap gap-4 text-sm md:text-base mb-4">
-                        <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                            <svg width="16" height="16" class="text-indigo-600 dark:text-indigo-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>Daily ETL via GitHub Actions</span>
+<body class="min-h-screen bg-white dark:bg-gray-900 text-slate-900 dark:text-gray-100 transition-colors duration-300">
+    <div class="min-h-screen bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+            <!-- Hero Section -->
+            <header class="rounded-2xl bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 shadow-sm p-8 md:p-12">
+                <div class="flex justify-between items-start gap-6">
+                    <div class="flex-1 space-y-4">
+                        <div>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">
+                                NOVA/DC Job Market Analytics
+                            </span>
                         </div>
-                        <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                            <svg width="16" height="16" class="text-indigo-600 dark:text-indigo-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>NLP skill extraction + embeddings clustering</span>
+                        <div class="space-y-3">
+                            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
+                                AI-Driven Job Market Intelligence Dashboard
+                            </h1>
+                            <p class="text-lg md:text-xl text-slate-700 dark:text-gray-200 leading-relaxed font-medium">
+                                Discover which skills are in demand, which companies are hiring, and where the job market is heading.
+                            </p>
+                            <p class="text-sm md:text-base text-slate-600 dark:text-gray-300 leading-relaxed">
+                                Daily-updated NOVA/DC hiring analytics powered by automated ETL, NLP skill extraction, clustering, and time-series forecasting.
+                            </p>
                         </div>
-                        <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                            <svg width="16" height="16" class="text-indigo-600 dark:text-indigo-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <div class="flex flex-wrap gap-4 text-sm md:text-base text-slate-700 dark:text-gray-200">
+                            <div class="flex items-center gap-2">
+                                <svg width="16" height="16" class="text-indigo-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span>Daily ETL via GitHub Actions</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg width="16" height="16" class="text-indigo-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span>NLP skill extraction + embeddings clustering</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg width="16" height="16" class="text-indigo-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span>Astro + React interactive analytics dashboard</span>
+                            </div>
+                        </div>
+                        <div id="last-updated" class="flex items-center gap-2 text-xs text-slate-500 dark:text-gray-400">
+                            <svg width="14" height="14" class="text-slate-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            <span>Astro + React interactive analytics dashboard</span>
+                            <span>Last updated: <span id="last-updated-time">Loading...</span></span>
                         </div>
                     </div>
-                    <div id="last-updated" class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
-                        <svg width="14" height="14" class="text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <span>Last updated: <span id="last-updated-time">Loading...</span></span>
-                    </div>
+                    <DarkModeToggle client:load />
                 </div>
-                <DarkModeToggle client:load />
-            </div>
-        </header>
+            </header>
 
-        <!-- Insights Summary -->
-        <InsightsSummary client:load />
+            <!-- Insights Summary -->
+            <InsightsSummary client:load />
 
-        <!-- Dashboard Content -->
-        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 md:p-8 transition-colors duration-300">
+            <!-- Dashboard Content -->
             <Dashboard client:only="react" />
         </div>
     </div>
