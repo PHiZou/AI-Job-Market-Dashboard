@@ -1,396 +1,99 @@
-# AI-Driven Job Market Intelligence Dashboard
+# AI Job Market Intelligence Dashboard
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen)](https://ai-job-market-dashboard.vercel.app/projects/job-market-dashboard) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+A full-stack portfolio piece that surfaces hiring signals from aggregated job postings: volume trends, trending skills, active employers, anomalies, and 30-day forecasts — all in a modern, accessible interface.
 
-> **Live Demo**: [View Dashboard](https://ai-job-market-dashboard.vercel.app/projects/job-market-dashboard) | [About Page](https://ai-job-market-dashboard.vercel.app/projects/job-market-dashboard/about)
+This is v2 — a full rewrite of the original Astro + Python ETL project on Next.js 15 and React 19. The legacy ETL pipeline has been replaced with static fixture data so the app can be explored and extended without API keys or scheduled jobs.
 
-A production-style system that ingests job postings daily, processes them with NLP/AI, generates hiring forecasts, and displays insights in an interactive Astro dashboard.
+## Stack
 
-## Portfolio Showcase
-
-This project demonstrates expertise in:
-
-- **Full-Stack Data Engineering**: End-to-end ETL pipeline with data cleaning, transformation, and storage
-- **Machine Learning & NLP**: Skill extraction, semantic embeddings, K-means clustering, and Prophet time-series forecasting
-- **Modern Web Development**: Astro + React + TypeScript with responsive design and dark mode
-- **Production Systems**: Automated GitHub Actions workflows, error handling, and deployment
-- **Data Visualization**: Interactive charts with Plotly.js and D3.js for geographic visualization
-
-### Key Features
-
-- **Actionable Insights**: "Learn Python: +25% growth" recommendations
-- **Real-Time Analytics**: Daily-updated job market trends and forecasts
-- **Professional UI**: Card-based layout with consistent design system
-- **Data Quality Indicators**: Confidence levels, freshness timestamps, and source attribution
-- **Responsive Design**: Optimized for mobile, tablet, and desktop
-
-### Screenshots
-
-> _Add screenshots here after deployment_
-> 
-> - Dashboard Overview
-> - Hiring Volume Trends Chart
-> - Skills Leaderboard with Learn Badges
-> - Company Insights with Hiring Trends
-
-## Architecture Overview
-
-```
-┌─────────────────┐
-│  JSearch API    │
-│  (RapidAPI)     │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────────────────────────────────────────────┐
-│                    ETL Pipeline                         │
-│  Fetch → Clean → NLP → Cluster → Aggregate → Forecast│
-└─────────────────────────────────────────────────────────┘
-         │
-         ▼
-┌─────────────────────────────────────────────────────────┐
-│              Data Storage                                │
-│  Parquet (raw/curated) + JSON (public/data)            │
-└─────────────────────────────────────────────────────────┘
-         │
-         ▼
-┌─────────────────────────────────────────────────────────┐
-│              GitHub Actions                              │
-│  Daily ETL → Convert → Commit → Push                   │
-└─────────────────────────────────────────────────────────┘
-         │
-         ▼
-┌─────────────────────────────────────────────────────────┐
-│              Astro Frontend                             │
-│  Interactive Dashboard with Charts & Visualizations    │
-└─────────────────────────────────────────────────────────┘
-```
+- **Next.js 15** — App Router, React Server Components, Route Handlers
+- **React 19** + **TypeScript 5**
+- **Tailwind v4** — CSS-first configuration, class-based dark mode
+- **Recharts** — SSR-friendly, composable charts
+- **next-themes** — system-aware dark mode
+- **lucide-react** — icons
 
 ## Features
 
-- **Daily Job Ingestion**: Automated fetching from JSearch API via RapidAPI
-- **Data Cleaning & Normalization**: Standardizes titles, companies, salaries, locations
-- **NLP Processing**: 
-  - Skill extraction (regex + keyword matching + optional LLM)
-  - Job category classification (embeddings + clustering)
-- **Time-Series Analysis**: Daily aggregations with rolling averages
-- **Forecasting**: Prophet-based 30-day hiring volume predictions
-- **Anomaly Detection**: Automatic alerts for spikes, drops, and trends
-- **Interactive Dashboard**: Real-time visualizations with Plotly/D3.js
+- Composite **Job Market Momentum Index** with five weighted components
+- **30-day forecast** with confidence interval
+- **Hiring volume** with 7-day / 30-day rolling average toggle
+- **Skills leaderboard** — sparklines, pinning, growth sort
+- **Company leaderboard** — salary ranges, search, multi-sort
+- **Alerts** — spikes, drops, skill trends with severity + expandable details
+- **Geographic map** — stylized US map with hover tooltips
+- **Global search** (`⌘K` / `Ctrl+K`) across skills, companies, categories, alerts
+- **Persistent preferences** — filter state stored in localStorage
+- **Public JSON API** — every dataset served under `/api/*`
+- **Dark mode** — respects system preference, persists user override
+- **Responsive** — mobile, tablet, desktop layouts
 
-## Project Structure
-
-```
-AI-Job-Market-Dashboard/
-├── .github/workflows/     # GitHub Actions for daily ETL
-├── config/                # Configuration files
-│   ├── skills_master.csv
-│   └── categories_mapping.yml
-├── data/
-│   ├── raw/              # Raw job data (Parquet)
-│   └── curated/           # Processed data (Parquet + JSON)
-├── etl/                   # ETL pipeline modules
-│   ├── pipeline.py        # Main orchestrator
-│   ├── fetch_jobs.py
-│   ├── clean_jobs.py
-│   ├── nlp_skills.py
-│   ├── nlp_clusters.py
-│   ├── aggregate_counts.py
-│   ├── forecast_jobs.py
-│   ├── generate_alerts.py
-│   └── export_json.py
-├── src/
-│   ├── pages/             # Astro pages
-│   ├── components/        # React components
-│   └── utils/             # Data loaders
-├── public/data/           # JSON files for frontend
-└── requirements.txt       # Python dependencies
-```
-
-## Quick Start
-
-### Using Sample Data (Recommended for Testing)
+## Quick start
 
 ```bash
-# Set environment variable
-export USE_SAMPLE_DATA=true
-
-# Run the pipeline
-python scripts/run_full_pipeline.py
-
-# Start frontend
-npm run dev
-```
-
-### Using Real API Data
-
-```bash
-# Set up .env file with your API keys
-cp .env.example .env
-# Edit .env with your RAPIDAPI_KEY
-
-# Run the pipeline
-python scripts/run_full_pipeline.py
-
-# Start frontend
-npm run dev
-```
-
-## Setup Instructions
-
-### Prerequisites
-
-- Python 3.11+
-- Node.js 18+
-- RapidAPI account with JSearch API access
-- (Optional) OpenAI API key for LLM-based skill extraction
-
-### 1. Clone Repository
-
-```bash
-git clone <repository-url>
-cd AI-Job-Market-Dashboard
-```
-
-### 2. Python Environment Setup
-
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# Note: If VS Code/Cursor Python extension shows venv creation errors,
-# you can ignore them and install dependencies manually using the command above.
-# The project doesn't need to be installed as a package - just install dependencies.
-```
-
-### 3. Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-RAPIDAPI_KEY=your_rapidapi_key_here
-RAPIDAPI_HOST=jsearch.p.rapidapi.com
-JSEARCH_API_ENDPOINT=https://jsearch.p.rapidapi.com/search
-OPENAI_API_KEY=your_openai_key_here  # Optional
-USE_SAMPLE_DATA=false  # Set to 'true' to use sample data instead of API calls
-```
-
-**API Usage Note**: The pipeline fetches 5 pages (5 API calls) per run by default. With daily GitHub Actions, this equals ~35 API calls per week. Adjust `num_pages` in `etl/pipeline.py` if you need to reduce usage further.
-
-### 4. Frontend Setup
-
-```bash
-# Install Node dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
-### 5. Run ETL Pipeline Locally
+Then open <http://localhost:3000>.
 
-```bash
-# Run complete pipeline
-python -m etl.pipeline
+## Scripts
 
-# Or run individual stages
-python -m etl.fetch_jobs
-python -m etl.clean_jobs
-# ... etc
+| Command            | What it does                      |
+| ------------------ | --------------------------------- |
+| `npm run dev`      | Start the Next dev server         |
+| `npm run build`    | Build the production bundle       |
+| `npm start`        | Start the production server       |
+| `npm run lint`     | Run ESLint                        |
+| `npm run typecheck`| TypeScript `--noEmit`             |
+
+## Project layout
+
+```
+app/                Next.js App Router routes
+  api/              JSON route handlers (trends, skills, companies, ...)
+  about/            About page
+  layout.tsx        Root layout + ThemeProvider
+  page.tsx          Main dashboard (server component)
+components/
+  dashboard/        Feature components (charts, gauge, leaderboards, ...)
+  ui/               Shared primitives (Card, Button, Input, Tabs, ...)
+  GlobalSearch.tsx  ⌘K search across all datasets
+  Navbar.tsx
+  ThemeProvider.tsx
+  ThemeToggle.tsx
+data/               JSON fixtures (server-side)
+lib/
+  data.ts           Server-only loaders
+  types.ts          Domain types
+  formatters.ts     Number, date, currency, relative-time helpers
+  usePrefs.ts       localStorage-backed preferences hook
+  cn.ts             clsx + tailwind-merge
+public/data/        JSON fixtures (also served as static assets)
 ```
 
-## Usage
+## API
 
-### Running the ETL Pipeline
+All endpoints return JSON with `Cache-Control: public, max-age=3600, stale-while-revalidate=86400`.
 
-The ETL pipeline can be run manually or automatically via GitHub Actions:
+| Endpoint            | Description                                     |
+| ------------------- | ----------------------------------------------- |
+| `GET /api/trends`   | Daily hiring volume by category                 |
+| `GET /api/skills`   | Overall skill frequency map                     |
+| `GET /api/companies`| Top hiring companies with salary ranges         |
+| `GET /api/forecasts`| 30-day forecasts with confidence intervals      |
+| `GET /api/alerts`   | Detected spikes, drops, skill trends            |
+| `GET /api/jmmi`     | Job Market Momentum Index                       |
+| `GET /api/search?q=`| Global search across all datasets               |
 
-**Manual Execution:**
-```bash
-python -m etl.pipeline
-```
+## Data
 
-**GitHub Actions:**
-- Runs automatically at 6 AM UTC daily
-- Can be triggered manually via GitHub Actions UI
-- Commits updated data files to the repository
-
-### Accessing the Dashboard
-
-1. Start the Astro dev server: `npm run dev`
-2. Navigate to: `http://localhost:4321/projects/job-market-dashboard`
-3. The dashboard will load data from `public/data/*.json`
-
-### Dashboard Components
-
-- **Hiring Volume Trends**: Line chart showing job counts over time by category
-- **30-Day Forecast**: Prophet forecast with confidence intervals
-- **Skills Leaderboard**: Top skills by frequency with category filtering
-- **Company Leaderboard**: Top companies by hiring volume, sortable
-- **Alerts Panel**: Real-time alerts for anomalies and trends
-
-## Data Flow
-
-1. **Ingestion**: `fetch_jobs.py` → `data/raw/jobs_YYYY-MM-DD.parquet`
-2. **Cleaning**: `clean_jobs.py` → `data/curated/jobs_clean.parquet`
-3. **NLP**: `nlp_skills.py` + `nlp_clusters.py` → adds skills and categories
-4. **Aggregation**: `aggregate_counts.py` → `data/curated/aggregates_*.parquet`
-5. **Forecasting**: `forecast_jobs.py` → `data/curated/forecasts.parquet`
-6. **Alerts**: `generate_alerts.py` → `data/curated/alerts.json`
-7. **Export**: `export_json.py` → `public/data/*.json`
-
-## Configuration
-
-### Skills Master List (`config/skills_master.csv`)
-
-Add or modify skills with their aliases:
-```csv
-skill_name,category,aliases
-Python,Programming Language,py|python3|python2
-```
-
-### Category Mapping (`config/categories_mapping.yml`)
-
-Map cluster IDs to human-readable category names:
-```yaml
-cluster_0: "Software Engineering"
-cluster_1: "Data Science & Analytics"
-```
-
-## GitHub Actions Setup
-
-1. Add repository secrets (Settings → Secrets and variables → Actions):
-   - `RAPIDAPI_KEY` (required for live data)
-   - `RAPIDAPI_HOST` (default: `jsearch.p.rapidapi.com`)
-   - `JSEARCH_API_ENDPOINT` (default: `https://jsearch.p.rapidapi.com/search`)
-   - `OPENAI_API_KEY` (optional - for LLM skill extraction)
-
-2. The workflow will:
-   - Run daily at 6 AM UTC (or manually via "Run workflow")
-   - Execute the ETL pipeline (5 API calls per run = ~35/week)
-   - Commit updated data files to the repository
-   - Push changes automatically
-
-3. **To reduce API usage**:
-   - Change schedule to weekly: Edit `.github/workflows/daily_etl.yml` and change `cron: '0 6 * * *'` to `cron: '0 6 * * 0'` (every Sunday)
-   - Or set `USE_SAMPLE_DATA=true` as a secret to use sample data instead
-
-## Development
-
-### Adding New ETL Stages
-
-1. Create new module in `etl/`
-2. Implement main function returning `{'success': bool, ...}`
-3. Add stage to `etl/pipeline.py`
-
-### Extending Frontend Components
-
-1. Add new component in `src/components/job-market/`
-2. Import and use in `src/pages/projects/job-market-dashboard/index.astro`
-3. Update data loaders if needed
-
-## Troubleshooting
-
-### ETL Pipeline Fails
-
-- Check API keys in `.env`
-- Review logs in `etl_pipeline.log`
-- Verify data files exist in `data/raw/`
-
-### Frontend Not Loading Data
-
-- Ensure JSON files exist in `public/data/`
-- Check browser console for fetch errors
-- Verify file paths in `dataLoaders.ts`
-
-### GitHub Actions Not Running
-
-- Check workflow file syntax
-- Verify repository secrets are set
-- Review Actions logs for errors
-
-## Technology Stack
-
-- **Backend**: Python 3.11, Pandas, Prophet, Sentence-Transformers
-- **Frontend**: Astro, React, TypeScript, Plotly.js, D3.js
-- **Data Storage**: Parquet (backend), JSON (frontend)
-- **Automation**: GitHub Actions
-- **APIs**: JSearch (RapidAPI), OpenAI (optional)
-
-## License
-
-MIT License
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## Testing with Sample Data
-
-For offline development and testing, you can use sample data:
-
-```bash
-export USE_SAMPLE_DATA=true
-python scripts/run_full_pipeline.py
-```
-
-This bypasses API calls and uses sample data from `sample_data/sample_jobs_raw.json`.
-
-## Roadmap
-
-- [ ] Add more data sources (USAJobs, SerpAPI)
-- [ ] Implement S3 + Athena + Lambda architecture
-- [ ] Add user authentication and saved searches
-- [ ] Enhance map visualization with Leaflet/Mapbox
-- [ ] Add email notifications for alerts
-- [ ] Implement advanced ML models for forecasting
+Fixture data lives in `data/*.json` and is also mirrored to `public/data/*.json` so it can be fetched directly by bots or static clients. To plug in a real pipeline, replace the loaders in `lib/data.ts` — no component changes required as long as the TypeScript types are honored.
 
 ## Deployment
 
-### Quick Deploy to Vercel
+Works out of the box on Vercel. `vercel.json` pins the framework preset; no additional configuration is required.
 
-1. **Push to GitHub**: Ensure your repository is on GitHub
-2. **Connect to Vercel**:
-   - Go to [vercel.com](https://vercel.com)
-   - Import your GitHub repository
-   - Vercel will auto-detect Astro and configure build settings
-3. **Set Environment Variables** (if needed for ETL):
-   - `RAPIDAPI_KEY` (optional - dashboard works with static data)
-   - `OPENAI_API_KEY` (optional)
-4. **Deploy**: Click "Deploy" - your dashboard will be live in minutes!
+## License
 
-### Manual Deployment
-
-```bash
-# Build the static site
-npm run build
-
-# Preview locally
-npm run preview
-
-# Deploy dist/ folder to your hosting provider
-# (Vercel, Netlify, GitHub Pages, etc.)
-```
-
-### Deployment Checklist
-
-- [ ] Run ETL pipeline to generate initial data (`public/data/*.json`)
-- [ ] Commit data files to repository
-- [ ] Push to GitHub
-- [ ] Connect to Vercel/Netlify
-- [ ] Verify dashboard loads correctly
-- [ ] Test dark mode toggle
-- [ ] Verify all charts render
-- [ ] Test mobile responsiveness
-- [ ] Update README with live demo URL
-
-See [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) for detailed deployment instructions.
-
+MIT
